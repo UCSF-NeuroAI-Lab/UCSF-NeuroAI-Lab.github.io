@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: Pedro Pinheiro-Chagas
 layout: default
 ---
@@ -16,4 +16,4 @@ I did my PhD with <a href="https://scholar.google.com/citations?user=2Dd5uoIAAAA
 <a href="http://www.unicog.org/site_2016/" class="ext" target="_blank"><b>CEA-NeuroSpin</b></a>, in the outskirts of 
 <a href="https://www.patrickroger.com/" class="ext" target="_blank">Paris</a>.</p>
 
-<br/><center>+++<a class="paper" title="Download full CV" href="/cv/pinheiro-chagas_nih_biosketch.pdf"> Bio 	Sketch </a>+++</center> -->
+<br/><center>+++<a class="paper" title="Download full CV" href="/cv/pinheiro-chagas_nih_biosketch.pdf"> Bio 	Sketch </a>+++</center>
