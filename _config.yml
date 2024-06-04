@@ -1,3 +1,4 @@
 name: Math Cognition UCSF
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+url: "https://pedro-lab-ai.github.io/"
