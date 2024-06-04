@@ -39,8 +39,7 @@ Unfortunately, the AzureOpenAI models in UCSF Versa don’t return log probabili
 
 There are several other methods to extract LLMs' response confidence, which we will explore in the near future. I hope this demo helps you better understand the inner workings of LLMs and sharpen your critical interpretation and reliance on these models.
 
+<script src="https://gist.github.com/pinheirochagas/069cb71b7dac88d89937bf3c4b6e7ec6.js"></script>
+
 ### References:
 [***OpenAI - use logprobs***](https://github.com/openai/openai-cookbook/blob/main/examples/Using_logprobs.ipynb) - This notebook demonstrates the use of the logprobs parameter in the Chat Completions API.
-
-
-
