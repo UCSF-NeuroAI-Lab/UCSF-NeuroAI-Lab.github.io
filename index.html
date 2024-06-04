@@ -1,0 +1,30 @@
+---
+title: Pedro Pinheiro-Chagas
+layout: default
+---
+
+<div class="blurb">
+    &nbsp
+
+	<h1>UCSF MAC - Artificial Intelligence & Healthcare</h1>
+
+
+	<section id="intro">
+		<p>This website aims at showcasing the AI initiatives at the <a href="https://memory.ucsf.edu/"><strong><em>UCSF Memory and Aging Center</em></strong></a>.</p>
+	</section>
+	
+
+
+		
+	<!-- <p class="animated infinite bounce">Example</p>
+	&nbsp -->
+	
+	<h2>AI Bits</h2>
+	<ul class="posts">
+	  {% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+	
+
+	</div>

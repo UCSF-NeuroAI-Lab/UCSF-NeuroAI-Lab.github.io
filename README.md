@@ -1,2 +1,2 @@
-# Pedro-Lab-AI.github.io
-Pedro Lab AI
+# pinheiro-chagas_lab_ucsf.github.io
+Pinheiro-Chagas Lab UCSF 
