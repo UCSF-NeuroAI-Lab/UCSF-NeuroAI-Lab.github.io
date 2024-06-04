@@ -1,0 +1,182 @@
+body {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+img.pic {
+  object-fit: cover;
+}
+
+container2 img {
+    width: 50%;
+    height: auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 95%;
+    font-size: 1em
+  }
+}
+
+nav ul, footer ul {
+    font-family:'Computer Modern Serif', serif;
+    padding: 0px;
+    list-style: none;
+    font-weight: none;
+}
+nav ul li, footer ul li {
+    font-family:'Computer Modern Serif', serif;
+    display: inline;
+    margin-right: 16px;
+}
+a {
+    font-family:'Computer Modern Serif', serif;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: overline underline;
+}
+
+a.int {
+    font-family:'Computer Modern Serif', serif;
+    text-decoration: none;
+    color: #444;
+    font-size: 1em;
+}
+
+a.int:hover {
+    text-decoration: overline;
+}
+
+a.int:focus {
+    text-decoration: overline;
+}
+
+a.ext {
+    font-family:'Computer Modern Serif', serif;
+    text-decoration: none;
+    color: #000;
+}
+
+a.ext:hover {
+    text-decoration: overline;
+}
+
+a.paper {
+    font-family:'Computer Modern Serif', serif;
+    text-decoration: none;
+    color: #f01818;
+}
+
+a.paper:hover {
+    text-decoration: overline;
+}
+
+
+h1 {
+    font-size: 1.86em;
+    font-family:'Computer Modern Serif', serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.1;
+    font-family:'Computer Modern Serif', serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-family:'Computer Modern Serif', serif;
+    font-weight: bold;
+}
+
+h4 {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 0.9em;
+    color: #333;
+}
+
+p {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #333;
+    text-align: justify;
+    /* This is most of the text */
+}
+
+pcv {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #333;
+    text-align: justify;
+    /* This is most of the text */
+}
+
+
+
+li {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #666;
+}
+
+li_menu {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    color: #666;
+}
+
+li2 {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #333;
+    word-spacing: 10px;
+
+}
+
+
+ul {
+    font-family:'Computer Modern Serif', serif;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    color: #111;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: 0.85em;
+
+
+
+}
+
+ul.posts { 
+    font-family:'Computer Modern Serif', serif;
+    margin: 20px auto 40px; 
+    font-size: 1em; 
+    /* This is the title of the posts */
+}
+
+ul.posts li {
+    font-family:'Computer Modern Serif', serif;
+    list-style: none;
+    font-size: 0.85em;
+
+}
+
+
+
