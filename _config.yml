@@ -1,4 +1,5 @@
-name: Math Cognition UCSF
+name: UCSF NeuroAI Lab
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-url: "https://pedro-lab-ai.github.io/"
+url: "https://ucsf-neuroai-lab.github.io/"
+description: "UCSF NeuroAI Lab - Advancing neuroscience through artificial intelligence"
