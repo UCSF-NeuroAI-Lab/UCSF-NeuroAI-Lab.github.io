@@ -1,6 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/cmu-serif');
+
 body {
-    max-width: 700px;
+    max-width: min(90vw, 1200px);
     margin: 0 auto;
+    font-family: 'CMU Serif', serif;
+    font-weight: 400;
+    color: #135E99;
+    padding: 0 15px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/figures/brain_glass.jpg');
+    /* background-image: url('/figures/processed/background2.png'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
 img.pic {
@@ -18,165 +37,279 @@ container2 img {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    width: 95%;
-    font-size: 1em
-  }
+    body {
+        width: 95%;
+        font-size: 1em;
+    }
+    
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    h4 { font-size: 1.1em; }
+    
+    p, pcv, li {
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+    
+    nav ul li, footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .container img,
+    container2 img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    
+    .project {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .collaborator {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    nav ul, footer ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    nav ul li, footer ul li {
+        display: block;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+    li2 {
+        font-size: 1.8em;
+        word-spacing: normal;
+    }
+    
+    .project h4 {
+        font-size: 1.2em;
+    }
+    
+    .project p {
+        font-size: 1.1em;
+    }
 }
 
 nav ul, footer ul {
-    font-family:'Computer Modern Serif', serif;
     padding: 0px;
     list-style: none;
-    font-weight: none;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+nav {
+    background-image: linear-gradient(to right, #135E99 50%, transparent 50%);
+    background-size: 15px 1px;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 nav ul li, footer ul li {
-    font-family:'Computer Modern Serif', serif;
-    display: inline;
-    margin-right: 16px;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 5px;
 }
+
+nav ul li a, footer ul li a {
+    text-decoration: none !important;
+}
+
+nav ul li a:hover, footer ul li a:hover {
+    text-decoration: underline !important;
+}
+
 a {
-    font-family:'Computer Modern Serif', serif;
-    text-decoration: none;
-    color: #000;
+    text-decoration: underline;
+    color: #135E99;
 }
 
 a:hover {
-    text-decoration: overline underline;
+    text-decoration: none;
 }
 
 a.int {
-    font-family:'Computer Modern Serif', serif;
-    text-decoration: none;
-    color: #444;
-    font-size: 1em;
+    text-decoration: underline;
+    color: #135E99;
+    font-size: 1.25em;
 }
 
 a.int:hover {
-    text-decoration: overline;
+    text-decoration: none;
 }
 
 a.int:focus {
-    text-decoration: overline;
+    text-decoration: none;
 }
 
 a.ext {
-    font-family:'Computer Modern Serif', serif;
-    text-decoration: none;
-    color: #000;
+    text-decoration: underline;
+    color: #135E99;
 }
 
 a.ext:hover {
-    text-decoration: overline;
+    text-decoration: none;
 }
 
 a.paper {
-    font-family:'Computer Modern Serif', serif;
-    text-decoration: none;
-    color: #f01818;
+    text-decoration: underline;
+    color: #135E99;
 }
 
 a.paper:hover {
-    text-decoration: overline;
+    text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
 
 h1 {
-    font-size: 1.86em;
-    font-family:'Computer Modern Serif', serif;
-    font-weight: normal;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #135E99;
 }
 
 h2 {
-    font-size: 1.1;
-    font-family:'Computer Modern Serif', serif;
-    font-weight: normal;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #135E99;
 }
 
 h3 {
-    font-size: 0.9em;
-    font-family:'Computer Modern Serif', serif;
-    font-weight: bold;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #135E99;
 }
 
 h4 {
-    font-family:'Computer Modern Serif', serif;
-    font-size: 0.9em;
-    color: #333;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #135E99;
 }
 
 p {
-    font-family:'Computer Modern Serif', serif;
-    font-size: 1em;
-    line-height: 1.4em;
-    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #135E99;
     text-align: justify;
-    /* This is most of the text */
 }
 
 pcv {
-    font-family:'Computer Modern Serif', serif;
-    font-size: 1em;
-    line-height: 1.4em;
-    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #135E99;
     text-align: justify;
-    /* This is most of the text */
 }
 
-
-
 li {
-    font-family:'Computer Modern Serif', serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #135E99;
+}
+
+nav li {
     font-size: 1em;
-    line-height: 1.4em;
-    color: #666;
 }
 
 li_menu {
-    font-family:'Computer Modern Serif', serif;
     font-size: 1.6em;
     line-height: 1.4em;
-    color: #666;
+    color: #135E99;
 }
 
 li2 {
-    font-family:'Computer Modern Serif', serif;
     font-size: 2.5em;
     line-height: 1em;
-    color: #333;
+    color: #135E99;
     word-spacing: 10px;
-
 }
 
-
 ul {
-    font-family:'Computer Modern Serif', serif;
-    font-size: 0.8em;
-    line-height: 1.4em;
-    color: #111;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #135E99;
+}
+
+/* Collaborator styles */
+.collaborator {
+    margin-bottom: 30px;
+}
+
+.collaborator h4 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #135E99;
+}
+
+.collaborator p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+/* Project styles */
+.project {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.project h4 {
+    margin-bottom: 8px;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #135E99;
+}
+
+.project p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.project p em {
+    color: #135E99;
+    font-style: italic;
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
+    padding-top: 20px;
+    margin-top: 60px;
+    background-image: linear-gradient(to right, #135E99 50%, transparent 50%);
+    background-size: 15px 1px;
+    background-repeat: repeat-x;
+    background-position: top 40px left 0;
     font-size: 0.85em;
-
-
-
 }
 
 ul.posts { 
-    font-family:'Computer Modern Serif', serif;
     margin: 20px auto 40px; 
-    font-size: 1em; 
-    /* This is the title of the posts */
+    font-size: 1.1em;
 }
 
 ul.posts li {
-    font-family:'Computer Modern Serif', serif;
     list-style: none;
-    font-size: 0.85em;
-
+    font-size: 1.1em;
 }
-
-
-

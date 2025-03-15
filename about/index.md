@@ -1,14 +1,37 @@
 ---
-title: Pedro Pinheiro-Chagas
+title: About
 layout: default
 ---
 
-## ***Pedro Pinheiro-Chagas, PhD***
+## About the Lab
 
-I am a [***Neuroscience Assistant Professor***](https://profiles.ucsf.edu/pedro.pinheirochagas#:~:text=He%20studies%20the%20neural%20architecture,and%20how%20we%20can%20help.) at the [***University of California, San Francisco (UCSF) Memory and Aging Center***](https://memory.ucsf.edu/), Department of Neurology. I study the neural architecture and dynamics of ***human intelligence***, with a focus on ***cognitive symbolic systems*** such as mathematics and language. My research program aims to understand how these systems develop and decline and how we can help.
+The UCSF NeuroAI Lab, directed by **Pedro Pinheiro-Chagas, PhD**, bridges fundamental cognitive neuroscience with state-of-the-art artificial intelligence to tackle two interrelated challenges. 
 
-I apply ***machine learning*** and computational modelling to electrophysiological recordings (intracranial EEG, MEG), neuroimaging (fMRI), continuous behavioral measures (trajectory-tracking) and neuropsychology to study the processing stages and representational codes underlying cognitive operations. Complementarily, I use intracranial electrical stimulation to modulate brain activity and behavior.
+Translational sciences: streamelining the diagnosis and treatment of neurodegenerative diseases
 
-Recently, I have been advancing the development of ***sophisticated artificial intelligence (AI)-driven models*** designed to ***predict and characterize neurodevelopmental and neurodegenerative conditions***, ultimately aiding in their diagnosis.
+Fundamental sciences: elucidating the neural substrates of uniquely human symbolic cognition.
 
-## > [***Here is my list of publications.***](https://scholar.google.com/citations?user=XVsftdsAAAAJ&hl)
+Located at the [UCSF Memory and Aging Center](https://memory.ucsf.edu/), Department of Neurology, our lab employs an interdisciplinary approach—spanning cognitive neuroscience, computational modeling, and AI-driven clinical research—to deepen our theoretical understanding of human cognition while enhancing our capacity to diagnose and treat disorders of the mind.
+
+### Director
+
+**Pedro Pinheiro-Chagas, PhD** is an Assistant Professor of Neurology at UCSF. His research investigates the neural architecture and dynamics of human intelligence, with a focus on cognitive symbolic systems such as mathematics and language. Using advanced computational approaches and multimodal neuroimaging techniques, he aims to understand how these systems develop and decline, and how we can help.
+
+[Google Scholar](https://scholar.google.com/citations?user=XVsftdsAAAAJ&hl) | 
+[Twitter](https://twitter.com/ppinheirochagas) | 
+[GitHub](https://github.com/pinheirochagas)
+
+### Our Approach
+
+Our lab leverages cutting-edge methodologies to pursue our research goals:
+
+- **Advanced AI Systems**: Developing agentic AI models that integrate multimodal clinical data
+- **Innovative Behavioral Tracking**: Using continuous trajectory analysis to reveal cognitive processes
+- **High-Resolution Neuroimaging**: Employing MEG, fMRI, and intracranial EEG for precise neural mapping
+- **Computational Modeling**: Creating models that capture the dynamics of human cognition
+
+### Join Us
+
+We welcome collaborations and inquiries from potential students, postdoctoral fellows, and research staff interested in the intersection of neuroscience and artificial intelligence. Our interdisciplinary environment fosters innovation and scientific discovery.
+
+Contact: pedro.pinheirochagas@ucsf.edu

@@ -1,105 +1,75 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<style>
-				.responsive {
-			    width: 100%;
-			    height: auto;
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>
+		
+		<!-- Fonts and stylesheets -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/eno1pmc.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" href="/icons/css/academicons.min.css"/>
+		<script defer src="/icons/fontawesome/on-server/js/fontawesome-all.js"></script>
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/figures/favicon.ico" />
+		
+		<!-- Added custom style for logo -->
+		<style>
+			.nav-logo {
+				height: 70px;
+				vertical-align: middle;
+				margin-right: 50px;
+				margin-left: -20px;
 			}
-
 			
-			.menu-item {
-				margin-right: 30px; /* Adjust the value as needed for more or less spacing */
+			nav ul li:first-child {
+				margin-left: 20px;
 			}
-			</style>
-			<title>{{ page.title }}</title>
-
-			<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Serif+Pro" rel="stylesheet">			
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="stylesheet" href="/icons/css/academicons.min.css"/>
-			<script defer src="/icons/fontawesome/on-server/js/fontawesome-all.js"></script>
-			<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-
-  			<!-- <link rel="shortcut icon" type="image/x-icon" href="/figures/favicon.ico" /> -->
-
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-					<li_menu class="menu-item"><a href="/" class="int">Home</a></li_menu>
-		        	<!-- <li><a href="/publications" class="int">Publications</a></li> -->
-	        		<!-- <li><a href="/projects" class="int">Projects</a></li> -->
-	        		<!-- <li><a href="/natura" class="int">Natura</a></li> -->
-					<li_menu class="menu-item"><a href="/blog" class="int">AI Bits</a></li_menu>
-					<li_menu class="menu-item"><a href="/about" class="int">Pedro Pinheiro-Chagas</a></li_menu>
-	        		<li><font color="white"></font></li>
-
-
-				</ul>
-			</nav>
-
-
-			<!--<nav>
-	    		<ul>
-	    		 	<h1><font size=6em>Pedro Pinheiro-Chagas </font></h1>
-
-	    		</ul>
-			</nav>-->
-
-			<nav>
-	    		<ul>			
-					<!-- <li2><a href="https://scholar.google.com/citations?user=XVsftdsAAAAJ&hl" target="_blank"><i class="ai ai-google-scholar ai-1x" style="color:#888"></i></a></li2>
-					<li2><font color="white">...</font></li2>
-
-					<li2><a href="https://git.ucsf.edu/Neurology-Pinheiro-Chagas-Lab" target="_blank"><i class="fab fa-github ai-1x" style="color:#888"></i></a></li2>				
-					<li2><font color="white">...</font></li2> -->
-
-					<!-- <li2><a href="https://twitter.com/ppinheirochagas" target="_blank"><i class="fab fa-twitter ai-1x" style="color:#888"></i></a></li2>
-					<li2><font color="white">...</font></li2> -->
-
-					<!-- <li2><a href="https://www.instagram.com/samoreirapedro/" target="_blank"><i class="fab fa-instagram" style="color:#888"></i></a></li2>
-					<li2><font color="white">...</font></li2> -->
-
-					<!-- <li2><a href="https://www.strava.com/athletes/pedro_pinheirochagas" target="_blank"><i class="fab fa-strava" style="color:#888"></i></a></li2>
-					<li2><font color="white">...</font></li2> -->
-
-
-	        		<!--<li><a href="/news" class="int">News</a></li>-->
-
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-
-				<!--<li><a href="mailto:ppinheirochagas@gmail.com" target="_blank"><i class="fa fa-envelope ai-2x" style="color:#888"></i></a></li>
-
-				<li><a href="https://scholar.google.com/citations?user=XVsftdsAAAAJ&hl" target="_blank"><i class="ai ai-google-scholar ai-2x" style="color:#888"></i></a></li>
-
-				<li><a href="https://github.com/pinheirochagas" target="_blank"><i class="fab fa-github ai-2x" style="color:#888"></i></a></li>				
-
-				<li><a href="https://twitter.com/ppinheirochagas" target="_blank"><i class="fab fa-twitter ai-2x" style="color:#888"></i></a></li>
-
-				<li><a href="https://www.linkedin.com/in/pedro-pinheiro-chagas-972011162/" target="_blank"><i class="fab fa-linkedin ai-2x" style="color:#888"></i></a></li>	-->	
-
+		</style>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav>
+    		<ul>
+        		<li><a href="/" class="int"><img src="/figures/logo_ucsf.png" alt="UCSF Logo" class="nav-logo">NeuroAI Lab</a></li>
+	        	<li><a href="/research" class="int">Research</a></li>
+        		<li><a href="/team" class="int">Team</a></li>
+        		<li><a href="/publications" class="int">Publications</a></li>
+        		<li><a href="/collaborators" class="int">Collaborators</a></li>
+        		<li><a href="/careers" class="int">Careers</a></li>
+        		<li><a href="/news" class="int">Bits</a></li>
+    		</ul>
+		</nav>
+		
+		<!-- Content -->
+		<div class="container">
+		{{ content }}
+		</div>
+		
+		<!-- Footer -->
+		<footer>
+    		<ul>
 				<div class="container">
 					<ul>
-						<li><img src="/figures/logos_ucsf.png" alt="Logos UCSF"></li>
+						<!-- <li><img src="/figures/logos_ucsf.png" alt="Logos UCSF"></li> -->
 					</ul>
 				</div>
-
-
-
-
-				</ul>
-			</footer>
-			{% include analytics.html %}
-		</body>
-	</html>
+			</ul>
+		</footer>
+		{% include analytics.html %}
+		
+		<script>
+		  document.addEventListener('DOMContentLoaded', function() {
+		    // Exclude hash links (internal page anchors)
+		    const links = document.querySelectorAll('a:not([href^="#"])');
+		    links.forEach(link => {
+		      if (link.hostname !== window.location.hostname) {
+		        link.target = '_blank';
+		        link.rel = 'noopener noreferrer';  // Security best practice
+		      }
+		    });
+		  });
+		</script>
+	</body>
+</html>
