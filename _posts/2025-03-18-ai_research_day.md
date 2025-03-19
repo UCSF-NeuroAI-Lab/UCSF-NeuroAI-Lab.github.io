@@ -22,9 +22,3 @@ date: 2025-03-18
   <img src="/figures/margo_ai_research_day.jpeg" width="600px" style="max-width: 600px; display: block; margin: 0 auto;" alt="Margo Kersey at her presentation booth">
 </div>
 
-### Sydney Moseley
-[**Black Freedom Mapping: Application of Artificial Intelligence (AI) to Construct a National Database of Black Mobility During the Jim Crow Era**](/assets/sydney_ai_research_day_2025.pdf). Sydney demonstrated how multimodal LLMs can strealine the documentation and analyses of historical patterns of Black mobility during the Jim Crow era.
-
-<div style="text-align: center; margin: 0 auto;">
-  <img src="/figures/sydney_ai_research_day.JPG" width="600px" style="max-width: 600px; display: block; margin: 0 auto;" alt="Sydney Moseley explaining her research">
-</div>
