@@ -13,7 +13,7 @@ At the **NeuroAI Lab**, we bridge powerfull AI with cognitive neuroscience to ta
 
 - **[Copilot decision support systems](#mac-copilot)** powered by advanced AI and multimodal data. 
 - **[AI systems to extract information](#ehrgenai)** from vast medical datasets and accelerate discovery. 
-- **Conversational AI agents** to optimize clinical interviews, data collection and consent form.
+- **[Conversational AI agents](#conv-ai)** to optimize clinical interviews, data collection and consent form.
 
 ### MAC Copilot: An agentic AI system for ​neurodegenerative disease diagnosis: {#mac-copilot}
 Our flagship project to augment clinical care was recently awarded a [**UCSF's Catalyst Program**](https://innovation.ucsf.edu/2025-catalyst-awardees) (translational accelerator focused on advancing UCSF discoveries for patient benefit and commercialization). Main collaborators: [Bruce Miller, MD](https://profiles.ucsf.edu/bruce.miller); [Katherine Possin, PhD](https://profiles.ucsf.edu/katherine.possin); [Maria Luisa Gorno-Tempini, MD, PhD](https://profiles.ucsf.edu/marilu.gornotempini); [Bill Seeley, MD](https://profiles.ucsf.edu/bill.seeley), and [Andreas Rauschecker, MD, PhD](https://profiles.ucsf.edu/andreas.rauschecker). 
@@ -27,6 +27,13 @@ In this project, we are using powerful Generative AI models to extract clinical 
 
 <div class="container">
 <img src="/figures/note_extractions.png" alt="MAC Copilot">
+</div>
+
+### Conversational AI agents: Optimizing clinical workflows and patient interactions: {#conv-ai}
+In this project, we are developing conversational AI systems that enhance clinical interviews, streamline data collection, and improve the consent process for patients with neurodegenerative diseases. Main collaborators: [Michael Weiner, PhD](https://profiles.ucsf.edu/michael.weiner); [Rachel Nosheny, PhD](https://profiles.ucsf.edu/rachel.nosheny); [Andrew Breithaupt, MD](https://med.emory.edu/directory/profile/?u=ABREITH); and [Jet Vonk, PhD](https://profiles.ucsf.edu/jet.vonk).
+
+<div class="container">
+<img src="/figures/conversational_ai.png" alt="Conversational AI Agents">
 </div>
 
 
@@ -62,7 +69,7 @@ In this project, we are using powerful Generative AI models to extract clinical 
                         ▒░░░░░░░░▒░░░░░░░▓░   ░▒░░░ ░░▒░▒░░░▒░░░░░▒█▒░░░▒▒▒▓▓██▒░░░░▒░░░░   ░░░░░░░░▒▓▒▒░░░░░░▒░░░░░▒▓▒░░░  ░ ░  ░░                 
                         ░░░░░▒░░░░▒▒▒░░▒▓▒▒░░   ▒▒░░░▒▓▒▒░░░▒▒░░░▒▒▓█░░░▒▒▓█░     ░░▒▒░  ░░░░░░░░░░▒█▒░ ▒▒░░▒▒░░░░░▒░▒▒░░░░░ ░  ░░                  
                             ░░░▒▒▒▒▒░░░▓▓██▓░░░░░░░░░░░░▒█▓▓▓░░▒▒░░░▒▒▓▒░▒▒█▓░               ░░▒▒▒░░▒▓█▓░░ ░░░▒▓▒▒▓▓▓▓░░▒▓▒░░░░░▒▓▓▒▒▒▒░               
-                            ░░░ ▒▒▒▓▓▓▓█▒░░▒░░░▒▒▒░░░░░▓████░░░░░░░▒▓▓▓▓█░                ░░░░░░▒▒▓█▓▒░░░░░░░░░░░░▒▓▓░░░▒▓▒▒░░░   ░░                   
+                            ░░░ ▒▒▒▓▓▓▓█▒░░▒░░░▒▒▒░░░░░▓████░░░░░░░▒▓▓▓▓█░                ░░░░░░▒▒▓█▓▒░░░░░░░░░░░░░▒▓▓░░░▒▓▒▒░░░   ░░                   
                             ░░░░░░░░░░▒░  ░░▒░░▒▒▓▓▓▓▒▒▓████▓▓▓▒▒▒▒▓▓██▒░     ░░░░░░ ░░░░░░░░░░░░██▓▒░░░░░░░░░░░▒▓▒░░░░░▒▒▒░░░                        
                             ░░░░░░░░░▒▒░░░░░░░░▒▒▒▓▓█████▓▒░░░░▒▓████▒░░░░░░░░░░░░░░░░░░░░░░░░▓█▓█▒░░░░░░░░░░░░▒░░▒░░ ▒▒▒░░░  ░░░░                   
                                 ░░▒░░░░░░▒▒░░░░▒▒▒▒▒▒▓▓██▒░░  ░░░░▒▓▒░   ░▒▒░░░░░░░░░▓███▓▓▒▒▒░░░░░▓▒░░░░░░░░░░░░░▒▓▒░░▒▒░░░░ ░▒▒▒▒░░                  
