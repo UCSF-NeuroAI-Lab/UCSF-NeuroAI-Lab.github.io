@@ -4,17 +4,13 @@ layout: default
 ---
 
 ## Health AI 
-**Discovery, diagnosis, and care of neurodegenerative diseases.** We use a human-centered approach to design agentic systems that have advanced reasoning, and are scientifically grounded and interpretable. We comgine generative AI with traditional machine learning methods to leverage multimodal data, such as unstructured clinical notes, psychological and biological markers. 
-
-- **Copilot decision support systems** powered by advanced AI and multimodal data. 
-- **AI systems to extract information** from vast medical datasets and accelerate discovery. 
-- **Conversational AI agents** to optimize clinical interviews, data collection and consent form.
-
+**Discovery, diagnosis, and care of neurodegenerative diseases.** We use a human-centered approach to design agentic systems that have advanced reasoning, and are scientifically grounded and interpretable. We comgine generative AI with traditional machine learning methods to leverage multimodal data, such as unstructured clinical notes, psychological and biological markers. [➔ **Research**](/research)
 
 ## Cognitive Neuroscience
-**Human symbolic cognition**. We study the development and decline of symbolic systems like **mathematics** and written language, as well as self-referential reasoning. We combine electrophysiology, neuroimaging, psychophysics,  neuropsychology, and electrical stimulation to study the processing stages and representational codes underlying cognitive operations.
+**Human symbolic cognition**. We study the development and decline of symbolic systems like **mathematics** and written language, as well as self-referential reasoning. We combine electrophysiology, neuroimaging, psychophysics,  neuropsychology, and electrical stimulation to study the processing stages and representational codes underlying cognitive operations.[➔ **Research**](/research)
 
-- ↻ **Insights from neuroscience** help us power our AI systems, which recursively help us better understand the brain ↺
+<!-- - ↻ **Insights from neuroscience** help us power our AI systems, which recursively help us better understand the brain ↺ -->
+
 
 &nbsp;
 
