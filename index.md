@@ -9,7 +9,7 @@ layout: default
 ## Cognitive Neuroscience
 **Human symbolic cognition**. We study the development and decline of symbolic systems like **mathematics** and written language, as well as self-referential reasoning. We combine electrophysiology, neuroimaging, psychophysics,  neuropsychology, and electrical stimulation to study the processing stages and representational codes underlying cognitive operations.[➔ **Research**](/research)
 
-<!-- - ↻ **Insights from neuroscience** help us power our AI systems, which recursively help us better understand the brain ↺ -->
+- ↻ **Insights from neuroscience** help us power our AI systems, which recursively help us better understand the brain ↺
 
 
 &nbsp;
