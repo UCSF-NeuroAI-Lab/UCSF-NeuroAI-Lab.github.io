@@ -4,7 +4,7 @@ layout: default
 ---
 
 ## Health AI 
-**Discovery, diagnosis, and care of neurodegenerative diseases.** We use a human-centered approach to design agentic systems that have advanced reasoning, and are scientifically grounded and interpretable. We comgine generative AI with traditional machine learning methods to leverage multimodal data, such as unstructured clinical notes, psychological and biological markers. [➔ **Research**](/research)
+**Discovery, diagnosis, and care of neurodegenerative diseases.** We use a human-centered approach to design agentic systems that have advanced reasoning, and are scientifically grounded and interpretable. We combine generative AI with traditional machine learning methods to leverage multimodal data, such as unstructured clinical notes, psychological and biological markers. [➔ **Research**](/research)
 
 ## Cognitive Neuroscience
 **Human symbolic cognition**. We study the development and decline of symbolic systems like **mathematics** and written language, as well as self-referential reasoning. We combine electrophysiology, neuroimaging, psychophysics,  neuropsychology, and electrical stimulation to study the processing stages and representational codes underlying cognitive operations.[➔ **Research**](/research)
