@@ -30,7 +30,7 @@ In this project, we are using powerful Generative AI models to extract clinical 
 </div>
 
 ### Conversational AI agents: Optimizing clinical workflows and patient interactions: {#conv-ai}
-In this project, we are developing conversational AI systems that enhance clinical interviews, streamline data collection, and improve the consent process for patients with neurodegenerative diseases. Main collaborators: [Michael Weiner, PhD](https://profiles.ucsf.edu/michael.weiner); [Rachel Nosheny, PhD](https://profiles.ucsf.edu/rachel.nosheny); [Andrew Breithaupt, MD](https://med.emory.edu/directory/profile/?u=ABREITH); and [Jet Vonk, PhD](https://profiles.ucsf.edu/jet.vonk).
+In this project, we are developing conversational AI systems that enhance clinical interviews and streamline data collection of patients with neurodegenerative diseases. Main collaborators: [Michael Weiner, PhD](https://profiles.ucsf.edu/michael.weiner); [Rachel Nosheny, PhD](https://profiles.ucsf.edu/rachel.nosheny); [Andrew Breithaupt, MD](https://med.emory.edu/directory/profile/?u=ABREITH); and [Jet Vonk, PhD](https://profiles.ucsf.edu/jet.vonk).
 
 <div class="container">
 <img src="/figures/conversational_ai.png" alt="Conversational AI Agents">
