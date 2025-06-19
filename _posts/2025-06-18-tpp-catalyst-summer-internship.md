@@ -25,34 +25,65 @@ A Target Product Profile is a structured roadmap that clearly defines the produc
 
 We've assembled an outstanding group of interns from leading institutions, each bringing unique perspectives and expertise:
 
-<img src="/mac_copilot_tpp/emily.jpg" alt="Emily Zhao" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 250px; border-radius: 5px;">
+<img src="/mac_copilot_tpp/emily.jpg" alt="Emily Zhao" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
 
 [**Emily Zhao**](/mac_copilot_tpp/Zhao_Emily_Resume.pdf){:target="_blank"} is an undergraduate at UCLA pursuing a B.A. in Economics and B.S. in Cognitive Science with a specialization in computing. Originally from New Jersey, Emily has worked as an EMT and currently serves as an Economics research assistant at the Anderson School of Management studying healthcare policy and as a Science and Health News Writer at The Daily Bruin.
 
 <div style="clear: both; margin-bottom: 30px;"></div>
 
 
-<img src="/mac_copilot_tpp/SeonMin.JPG" alt="Seon Min Kim" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 250px; border-radius: 5px;">
+<img src="/mac_copilot_tpp/SeonMin.JPG" alt="Seon Min Kim" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
 
 [**Seon Min Kim**](/mac_copilot_tpp/Resume_SeonMinKim_Catalyst.pdf){:target="_blank"} is a health data scientist with a background in pharmaceutical regulatory affairs, currently pursuing her Master's in Health Data Science at UCSF. Her work centers on leveraging AI to support clinical decision-making and digital health innovation. Outside of the lab, she enjoys running, camping, and traveling, especially discovering new places to eat and explore.
 
 <div style="clear: both; margin-bottom: 30px;"></div>
 
 
-<img src="/mac_copilot_tpp/Tim_Klein.jpg" alt="Timothy Klein" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 250px; border-radius: 5px;">
+<img src="/mac_copilot_tpp/Tim_Klein.jpg" alt="Timothy Klein" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
 
 [**Timothy Klein**](/mac_copilot_tpp/Timothy_Klein_Resume.pdf){:target="_blank"} is a postdoc at UCSF transitioning from academia to biotech or consulting. With a PhD in protein biochemistry and structural biology, Tim has been working on determining how bacteria defend themselves against viral infection during his time at UCSF.
 
 <div style="clear: both; margin-bottom: 30px;"></div>
 
 
-<img src="/mac_copilot_tpp/pskaggs@sfsu.edu-226e537f.jpg" alt="Peyton Skaggs" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 250px; border-radius: 5px;">
+<img src="/mac_copilot_tpp/pskaggs@sfsu.edu-226e537f.jpg" alt="Peyton Skaggs" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
 
 [**Peyton Skaggs**](/mac_copilot_tpp/Peyton%20Skaggs%20CV%202025.pdf){:target="_blank"} is an undergraduate at San Francisco State University and a UCSF Catalyst intern with a strong interest in healthcare innovation. He's excited to contribute to projects that make a real-world impact and is eager to keep learning, collaborating, and building things that matter.
 
 <div style="clear: both; margin-bottom: 30px;"></div>
 
-Our team also includes [**Jialin Jiang**](/mac_copilot_tpp/Jiang_Jialin_Resume_Official%20(2).pdf){:target="_blank"} (UC Berkeley Senior), [**Korey Dang**](/mac_copilot_tpp/Korey%20Dang%20-%20Resume.pdf){:target="_blank"} (UC Berkeley Rising Junior), [**Jacob Han**](/mac_copilot_tpp/Jacob%20Han%20-%20Resume.pdf){:target="_blank"} (UC Berkeley Junior), [**Andy Wang**](/mac_copilot_tpp/Andy_Wang_Resume%20(4).pdf){:target="_blank"} (Stanford Rising 4th year in biomedical computation and computer science), and **Joshua Mok** (UC Berkeley Senior).
+
+<img src="/mac_copilot_tpp/korey.jpeg" alt="Korey Dang" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
+
+[**Korey Dang**](/mac_copilot_tpp/Korey%20Dang%20-%20Resume.pdf){:target="_blank"} is an undergraduate at UC Berkeley studying Economics and Public Health. He grew up in the East Bay, and has worked various clinical positions before transitioning to business roles. He is currently working to expand his knowledge in business strategy and finance. Outside of academic and professional work, Korey enjoys reading, golfing, and exploring the Bay to find new restaurants.
+
+<div style="clear: both; margin-bottom: 30px;"></div>
+
+
+<img src="/mac_copilot_tpp/andy wang headshot.JPEG" alt="Andy Wang" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
+
+[**Andy Wang**](/mac_copilot_tpp/Andy_Wang_Resume%20(4).pdf){:target="_blank"} is a student at Stanford pursuing a B.S. in biomedical computation and an M.S. in computer science. He is interested in the intersection of computer science and medicine and has worked on initiatives in personalized medicine and digital health. He also enjoys playing volleyball, hiking, and is the alto in a saxophone quartet on campus.
+
+<div style="clear: both; margin-bottom: 30px;"></div>
+
+
+<img src="/mac_copilot_tpp/jocob.jpg" alt="Jacob Han" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
+
+[**Jacob Han**](/mac_copilot_tpp/Jacob%20Han%20-%20Resume.pdf){:target="_blank"} is an undergraduate at Berkeley majoring in bioengineering and data science, interested in the intersection between life sciences, tech, and business. He has experience working in consulting, business development, finance, and more. In his free time, he loves to fish, work out, and watch the Chicago Bears.
+
+<div style="clear: both; margin-bottom: 30px;"></div> 
+
+<img src="/mac_copilot_tpp/jialin.jpeg" alt="Jialin Jiang" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
+
+[**Jialin Jiang**](/mac_copilot_tpp/Jiang_Jialin_Resume_Official%20(2).pdf){:target="_blank"} is an undergraduate at UC Berkeley double majoring in Molecular Cell Biology and Data Science. She is passionate about digital health product management and currently serves as a student analyst at CITRIS Health, where she maps landscape opportunities in AgeTech and AI-driven health innovations.
+
+<div style="clear: both; margin-bottom: 30px;"></div>
+
+
+
+
+
+Our team also includes **Joshua Mok** (UC Berkeley Senior).
 
 ### Catalyst Program Recognition and Support
 
