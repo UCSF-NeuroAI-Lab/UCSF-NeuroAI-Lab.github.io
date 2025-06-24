@@ -80,10 +80,11 @@ We've assembled an outstanding group of interns from leading institutions, each 
 <div style="clear: both; margin-bottom: 30px;"></div>
 
 
+<img src="/mac_copilot_tpp/joshua.jpg" alt="Joshua Mok" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 200px; border-radius: 5px;">
 
+[**Joshua Mok**](/mac_copilot_tpp/Joshua%20Mok%20-%20UCSF%20Resume.pdf){:target="_blank"} is an undergraduate at UC Berkeley studying Nutrition and Metabolic Biology. He currently conducts research under Dr. Sona Kang through the SPUR program. He also works with QB3, supporting life science ventures and intern programming. Joshua is interested in the intersection of medicine, entrepreneurship, and translational research. In his free time, he enjoys running, playing volleyball, and finding new cafes or food spots around the Bay.
 
-
-Our team also includes **Joshua Mok** (UC Berkeley Senior).
+<div style="clear: both; margin-bottom: 30px;"></div>
 
 ### Catalyst Program Recognition and Support
 
