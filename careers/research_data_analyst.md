@@ -10,7 +10,7 @@ layout: default
 </div>
 
 ## Job Summary
-The NeuroAI Lab at UCSF, led by Professor Pedro Pinheiro-Chagas, invites applications for a research data analyst position focused on AI conversational voice agents for neurology healthcare. The successful candidate will join a multidisciplinary team at the intersection of cutting-edge AI and cognitive neuroscience, with the goal of advancing discovery, diagnosis, and care for neurodegenerative diseases.
+The NeuroAI Lab at UCSF, led by Professor Pedro Pinheiro-Chagas, invites applications for a research data analyst position focused on AI voice agents for neurology healthcare. The successful candidate will join a multidisciplinary team at the intersection of cutting-edge AI and cognitive neuroscience, with the goal of advancing discovery, diagnosis, and care for neurodegenerative diseases.
 
 The primary project involves adapting an AI voice agent system to administer the Clinical Dementia Rating (CDR), a critical tool in clinical trials for assessing the severity and progression of dementia. This collaborative effort, co-led by experts Michael W. Weiner, M.D., and Rachel L. Nosheny, Ph.D., offers outstanding opportunities for mentorship and translational research impact.
 
