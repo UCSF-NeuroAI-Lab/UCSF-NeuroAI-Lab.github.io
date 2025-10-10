@@ -53,7 +53,7 @@ The multimodal model showed strong ability to distinguish between different PPA 
 * Logopenic vs. Semantic: AUC = 0.833
 * Nonfluent vs. Semantic: AUC = 0.750
 
-<img src="/figures/sreekar/ppa_result_pairwise.jpg" alt="PPA Pairwise Comparison" style="display:block; width:90%; margin:20px auto; border-radius:10px;">
+<img src="/figures/sreekar/ppa_result_pairwise.png" alt="PPA Pairwise Comparison" style="display:block; width:90%; margin:20px auto; border-radius:10px;">
 
 In plain terms, the model was very good at telling apart logopenic and nonfluent cases, and logopenic and semantic cases. Distinguishing between nonfluent and semantic was a bit harder, which makes sense clinically, since these subtypes often show overlapping features.
 

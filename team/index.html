@@ -3,37 +3,137 @@ title: Team
 layout: default
 ---
 
+<style>
+.more-text {
+    display: none;
+}
+.read-more-btn {
+    color: #007cba;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.read-more-btn:hover {
+    color: #005a87;
+}
+h3 {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+p {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+</style>
+
+<script>
+function toggleText(id) {
+    var moreText = document.getElementById("more-" + id);
+    var btnText = document.getElementById("btn-" + id);
+    
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "inline";
+        btnText.innerHTML = " Show less";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerHTML = " Read more...";
+    }
+}
+</script>
+
 <h2>Lab Members</h2>
+
+<br>
 
 <h3><a href="https://profiles.ucsf.edu/pedro.pinheirochagas">Pedro Pinheiro-Chagas, PhD</a> - <em>Principal Investigator</em></h3>
 
-<img src="/team/pedro.jpg" alt="Pedro Pinheiro-Chagas" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 300px; border-radius: 5px;">
+<img src="/team/pedro.jpg" alt="Pedro Pinheiro-Chagas" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
 
-<p style="text-align: justify;">Pedro is an Cognitive Neuroscientist Assistant Professor at UCSF <a href="https://memory.ucsf.edu/" target="_blank"><strong>UCSF Memory and Aging Center</strong></a>, <em>Department of Neurology</em>, <a href="https://bakarinstitute.ucsf.edu/" target="_blank"><strong>Bakar Computational Health Sciences Institute</strong></a> and the <a href="https://c2i2.ucsf.edu/" target="_blank"><strong>Center for Intelligent Imaging (ci2)</strong></a>. His research investigates the neural architecture and dynamics of human intelligence, with a focus on cognitive symbolic systems such as mathematics and language and self-referential processing. Using advanced computational approaches and multimodal neuroimaging techniques, he aims to understand how these systems develop and decline, and how we can help. Recently, his team has been advancing the development of powerful AI systems designed to predict and characterize neurodevelopmental and neurodegenerative conditions. He completed his undegrad and masters at the <em>Federal University of Minas Gerais - Brazil</em>, PhD at the <em>Sorbonne University - CEA-NeuroSpin (Paris, France)</em> with <strong>Stanislas Dehaene</strong> and postdoc at <strong>Stanford University</strong> with <em>Josef Parvizi</em>. <a href="https://scholar.google.com/citations?user=XVsftdsAAAAJ&hl"><strong>Google Scholar</strong></a>. Pedro is also an <a href="https://www.strava.com/athletes/48288217"><em>endurance athlete</em> | <em>ultra runner</em></a> and avid <a href="https://pedrolab.org/"><em>photographer</em></a>.</p>
+<p style="text-align: justify;">Pedro is an Cognitive Neuroscientist Assistant Professor at UCSF <a href="https://memory.ucsf.edu/" target="_blank"><strong>UCSF Memory and Aging Center</strong></a>, <em>Department of Neurology</em>, <a href="https://bakarinstitute.ucsf.edu/" target="_blank"><strong>Bakar Computational Health Sciences Institute</strong></a> and the <a href="https://c2i2.ucsf.edu/" target="_blank"><strong>Center for Intelligent Imaging (ci2)</strong></a>. His research investigates the neural architecture and dynamics of human intelligence, with a focus on cognitive symbolic systems such as mathematics and language.<span class="more-text" id="more-pedro"> Using advanced computational approaches and multimodal neuroimaging techniques, he aims to understand how these systems develop and decline, and how we can help. Recently, his team has been advancing the development of powerful AI systems designed to predict and characterize neurodevelopmental and neurodegenerative conditions. He completed his undegrad and masters at the <em>Federal University of Minas Gerais - Brazil</em>, PhD at the <em>Sorbonne University - CEA-NeuroSpin (Paris, France)</em> with <strong>Stanislas Dehaene</strong> and postdoc at <strong>Stanford University</strong> with <em>Josef Parvizi</em>. <a href="https://scholar.google.com/citations?user=XVsftdsAAAAJ&hl"><strong>Google Scholar</strong></a>. Pedro is also an <a href="https://www.strava.com/athletes/48288217"><em>endurance athlete</em> | <em>ultra runner</em></a> and avid <a href="https://pedrolab.org/"><em>photographer</em></a>.</span><span class="read-more-btn" id="btn-pedro" onclick="toggleText('pedro')"> Read more...</span></p>
 
-<div style="clear: both; margin-bottom: 60px;"></div>
+<div style="clear: both; margin-bottom: 5px;"></div>
 
 <h3>Alice Tang, PhD - <em>Postdoctoral Fellow</em></h3>
 
-<img src="/team/alice_tang.png" alt="Alice Tang" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 300px; border-radius: 5px;">
+<img src="/team/alice_tang.png" alt="Alice Tang" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
 
-<p style="text-align: justify;">Alice S. Tang, PhD, is an MSTP candidate and current medical student at University of California, San Francisco (UCSF). Alice recently completed her doctoral thesis in the UCSF-UC Berkeley Graduate Program in Bioengineering under the mentorship of Dr. Marina Sirota at the Bakar Computational Health Sciences Institute, which has garnered recognition by winning first place for the AMIA Edward H. Shortliffe Doctoral Dissertation Award. Her research includes the development of computational methods to yield insights into diseases such as neurodegeneration, cerebrovascular disease, and women's health. Currently, she is interested in further applications of computational methods and large language models in complex and heterogeneous disorders within neurology and psychiatry. <a href="https://scholar.google.com/citations?user=04E4XeUAAAAJ&hl=en"><strong>Google Scholar</strong></a>. Outside of work, Alice likes to explore art, food, games, or tea, and she enjoys going on leisure hikes or playing tennis for fun!  </p>
+<p style="text-align: justify;">Alice S. Tang, PhD, is an MSTP candidate and current medical student at University of California, San Francisco (UCSF). Alice recently completed her doctoral thesis in the UCSF-UC Berkeley Graduate Program in Bioengineering under the mentorship of Dr. Marina Sirota at the Bakar Computational Health Sciences Institute, which has garnered recognition by winning first place for the AMIA Edward H. Shortliffe Doctoral Dissertation Award.<span class="more-text" id="more-alice"> Her research includes the development of computational methods to yield insights into diseases such as neurodegeneration, cerebrovascular disease, and women's health. Currently, she is interested in further applications of computational methods and large language models in complex and heterogeneous disorders within neurology and psychiatry. <a href="https://scholar.google.com/citations?user=04E4XeUAAAAJ&hl=en"><strong>Google Scholar</strong></a>. Outside of work, Alice likes to explore art, food, games, or tea, and she enjoys going on leisure hikes or playing tennis for fun!</span><span class="read-more-btn" id="btn-alice" onclick="toggleText('alice')"> Read more...</span></p>
 
-<div style="clear: both; margin-bottom: 60px;"></div>
+<div style="clear: both; margin-bottom: 5px;"></div>
 
-<h3>Margo Kersey, B.S. - <em>Research Data Analyst</em></h3>
+<h3>Chiara Gallingani, M.D. - <em>Visiting Scholar</em></h3>
 
-<img src="/team/margo.jpeg" alt="Margo Kersey" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 300px; border-radius: 5px;">
+<img src="/team/chiara.jpg" alt="Chiara Gallingani" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
 
-<p style="text-align: justify;">Margo holds a B.S. in Applied Mathematics and minor in Cognitive Science from UCLA. As a research data analyst at the UCSF Dyslexia Center, Margo leverages advanced computational techniques to improve diagnosis of neurodevelopmental disorders, identification of specific cognitive profiles, and development of targeted interventions for children with math and reading difficulties. She manages a multimodal MRI database of pediatric participants with a focus on developing customized diffusion tractography to target cognitive domains crucial for language, attention, and math. She also develops interactive visualization tools for clinical interpretation of neurological profiles. Outside of the lab, she can be found at the pottery studio making ceramics, playing with her cats, or sewing. Starting Fall 2025, Margo will be a first year Neuroscience PhD student at University of Michigan.</p>
+<p style="text-align: justify;">Chiara earned her M.D. from the University of Modena and Reggio Emilia in Italy, where she is currently completing her residency in Neurology and where she will start her PhD in Neuroscience from November 2025. As a visiting scholar at the UCSF Memory and Aging Center, her research focuses on the clinical and neuroanatomical correlates of frontotemporal dementia and primary progressive aphasia, with a particular emphasis on semantic dementia and the role of white matter involvement through the application of advanced neuroimaging techniques.<span class="more-text" id="more-chiara"> She also contributes to collaborative projects aimed at using AI for the clinical and neuropathological diagnosis of neurodegenerative disorders. Outside of her research and clinical work, Chiara enjoys traveling and spending time in nature.</span><span class="read-more-btn" id="btn-chiara" onclick="toggleText('chiara')"> Read more...</span></p>
 
-<div style="clear: both; margin-bottom: 60px;"></div>
+<div style="clear: both; margin-bottom: 5px;"></div>
 
 <h3>Isaac Yi Kim - <em>Medical Student Researcher</em></h3>
 
-<img src="/team/isaac.jpg" alt="Isaac Yi Kim" style="float: right; margin-left: 20px; margin-bottom: 15px; width: 300px; border-radius: 5px;">
+<img src="/team/isaac.jpg" alt="Isaac Yi Kim" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
 
-<p style="text-align: justify;">Isaac is a medical student at UCSF involved in various research projects. He currently works on the E*Drive project, translating academic clinical tools for community use, and the UCSF Multitudes project, developing tasks used to identify dyscalculia in children (<a href="https://neuro.iyk.gg/multitudes/">Multitudes</a>) and characterize math cognition deficits in patients with neurogenerative disease (<a href="https://neuro.iyk.gg/mac/">MAC</a>). He also works with the Interventional Radiology Lab, where he analyzes patient imaging and data while maintaining confidentiality. His previous research includes exploring the connection between task-switching and cognitive decline and contributing to a Department of Defense project on situational awareness. Outside of medicine, he enjoys cinematography, coding, and playing violin. <a href="https://iyk.gg"><strong>Personal Website</strong></a>.</p>
+<p style="text-align: justify;">Isaac is a medical student at UCSF involved in various research projects. He currently works on the E*Drive project, translating academic clinical tools for community use, and the UCSF Multitudes project, developing tasks used to identify dyscalculia in children (<a href="https://neuro.iyk.gg/multitudes/">Multitudes</a>) and characterize math cognition deficits in patients with neurogenerative disease (<a href="https://neuro.iyk.gg/mac/">MAC</a>).<span class="more-text" id="more-isaac"> He also works with the Interventional Radiology Lab, where he analyzes patient imaging and data while maintaining confidentiality. His previous research includes exploring the connection between task-switching and cognitive decline and contributing to a Department of Defense project on situational awareness. Outside of medicine, he enjoys cinematography, coding, and playing violin. <a href="https://iyk.gg"><strong>Personal Website</strong></a>.</span><span class="read-more-btn" id="btn-isaac" onclick="toggleText('isaac')"> Read more...</span></p>
 
-<div style="clear: both; margin-bottom: 60px;"></div>
+<div style="clear: both; margin-bottom: 5px;"></div>
+
+<h2>UC Berkeley Undergraduate Research Apprentice Program (URAP)</h2>
+
+<br>
+
+<h3>Fisher Zhang - <em>Data Science and Neuroscience</em></h3>
+
+<img src="/team/fisher.png" alt="Fisher Zhang" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
+
+<p style="text-align: justify;">Fisher is a UC Berkeley student studying Data Science and Neuroscience focused on AI for healthcare. He has worked on agentic systems in mental health and bioinformatics. He has worked in research labs on protein transportation in Parkinson's Disease. On campus, he co-leads a healthcare speaker series and manages a club-centric project team.</p>
+
+<div style="clear: both; margin-bottom: 5px;"></div>
+
+<h3>Nataliia Kulieshova - <em>Computer Science and Cognitive Science</em></h3>
+
+<img src="/team/nataliia.png" alt="Nataliia Kulieshova" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
+
+<p style="text-align: justify;">Nataliia is a Computer Science and Cognitive Science undergraduate at UC Berkeley with research interests in computational neuroscience and AI/ML in clinical settings. At NeuroAI Lab, she is working on the MAC project in developing an agentic AI system that integrates clinical fMRI data with large language models to improve neurodegenerative disease diagnosis.<span class="more-text" id="more-nataliia"> Previously, she worked on large-scale ML and health technology projects, including optimizing Lucene-based vector search at Uber to improve latency and cost efficiency, and building clinician-facing NLP systems at Brightside Health to transform unstructured therapy notes into structured, searchable knowledge graphs. She has also led projects that apply AI to accessibility and mental health, such as a text-to-ASL translator and a PTSD support platform for Ukrainian war survivors. Beyond the lab, she enjoys reading (she read over 60 books last year!), swimming, hiking, and playing board games.</span><span class="read-more-btn" id="btn-nataliia" onclick="toggleText('nataliia')"> Read more...</span></p>
+
+<div style="clear: both; margin-bottom: 5px;"></div>
+
+<h3>Camille - <em>EECS</em></h3>
+
+<img src="/team/camille.jpeg" alt="Camille" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
+
+<p style="text-align: justify;">Camille is a senior studying EECS with a passion for neuroscience & applied AI/ML research. In her free time, she loves to play tennis, explore new areas, and try new foods.</p>
+
+<div style="clear: both; margin-bottom: 5px;"></div>
+
+<h3>Joshua Mok - <em>Nutrition and Metabolic Biology</em></h3>
+
+<img src="/team/joshua.jpg" alt="Joshua Mok" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
+
+<p style="text-align: justify;">Joshua is an undergraduate at UC Berkeley studying Nutrition and Metabolic Biology. He currently conducts research under Dr. Sona Kang through the SPUR program and works with QB3, supporting life science ventures and intern programming. Joshua is interested in the intersection of medicine, entrepreneurship, and translational research. In his free time, he enjoys running, playing volleyball, and finding new cafes or food spots around the Bay.</p>
+
+<div style="clear: both; margin-bottom: 5px;"></div>
+
+<h2>High School Student Interns</h2>
+
+<br>
+
+<h3>Sreekar Baddepudi - <em>RISE Program Intern</em></h3>
+
+<img src="/team/sreekar.png" alt="Sreekar Baddepudi" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
+
+<p style="text-align: justify;">Sreekar was a high school intern this summer at the UCSF NeuroAI Lab through the Radiology Initiative for Scholarly Engagement (RISE Program). He had the opportunity to work on the exploration of generative AI technology in the Memory and Aging Center.<span class="more-text" id="more-sreekar"> His main project focused on using multimodal AI to predict subtypes of Primary Progressive Aphasia (PPA) by combining clinical notes and MRI scans. Alongside that, he also helped test the Memory and Aging Center's new vCDR tool and explored other ways generative AI could be useful in both research and clinical care.</span><span class="read-more-btn" id="btn-sreekar" onclick="toggleText('sreekar')"> Read more...</span></p>
+
+<div style="clear: both; margin-bottom: 5px;"></div>
+
+<h2>Alumni</h2>
+
+<br>
+
+<h3>Margo Kersey, B.S. - <em>PhD Student, University of Michigan</em></h3>
+
+<img src="/team/margo.jpeg" alt="Margo Kersey" style="float: right; margin-left: 20px; margin-bottom: 5px; width: 200px; border-radius: 5px;">
+
+<p style="text-align: justify;">Margo is now a PhD Student and MNI Graduate Student Scholar in the Neuroscience Graduate Program at University of Michigan | Michigan Medicine. She holds a B.S. in Applied Mathematics and minor in Cognitive Science from UCLA.<span class="more-text" id="more-margo"> As a research data analyst at the UCSF Dyslexia Center, Margo leveraged advanced computational techniques to improve diagnosis of neurodevelopmental disorders, identification of specific cognitive profiles, and development of targeted interventions for children with math and reading difficulties. She managed a multimodal MRI database of pediatric participants with a focus on developing customized diffusion tractography to target cognitive domains crucial for language, attention, and math. She also developed interactive visualization tools for clinical interpretation of neurological profiles. Outside of the lab, she can be found at the pottery studio making ceramics, playing with her cats, or sewing.</span><span class="read-more-btn" id="btn-margo" onclick="toggleText('margo')"> Read more...</span></p>
+
+<div style="clear: both; margin-bottom: 5px;"></div>
 

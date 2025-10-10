@@ -9,7 +9,11 @@ layout: default
 
 ## Selected Publications
 
-Breithaupt AG, Tang A, Miller BL, Pinheiro-Chagas P. **[Integrating Generative Artificial Intelligence in ADRD: A Framework for Streamlining Diagnosis and Care in Neurodegenerative Diseases](https://arxiv.org/abs/2502.06842)**. arXiv preprint arXiv:2502.06842. 2025 Feb 6.
+Tang AS, Zeng BZD, Rankin KP, Gorno-Tempini ML, Seeley WW, Rosen HJ, Rabinovici GD, Oskotsky TT, Sirota M, Pinheiro-Chagas P. **[Characterizing Dementia Phenotypes from Unstructured EHR Notes with Generative AI and Interpretable Machine Learning](https://doi.org/10.1101/2025.10.01.25336815)**. medRxiv preprint medRxiv:2025.10.01.25336815. 2025 Oct 1.
+
+Cheng YW, Pinheiro-Chagas P, Gorno-Tempini ML, Tee BL. **[Redefining Language and Neurodegeneration Through PPA: Clinical Phenotypes, Network Vulnerability, and Global Research Directions](https://doi.org/10.11251/jshbf.45.159)**. Higher Brain Function Research. 2025 Sep 30;45(3):159-175.
+
+Breithaupt AG, Weiner M, Tang A, Possin KL, Sirota M, Lah J, Levey AI, Van Hentenryck P, Zandehshahvar R, Gorno-Tempini ML, Giorgio J, Wang J, Rauschecker AM, Rosen HJ, Nosheny RL, Miller BL, Pinheiro-Chagas P. **[Integrating Generative Artificial Intelligence in ADRD: A Roadmap for Streamlining Diagnosis and Care in Neurodegenerative Diseases](https://doi.org/10.48550/arXiv.2502.06842)**. arXiv preprint arXiv:2502.06842. 2025 Feb 6.
 
 Stieger JR, Pinheiro-Chagas P, Fang Y, Li J, Lusk Z, Perry CM, Girn M, Contreras D, Chen Q, Huguenard JR, Spreng RN, Edlow BL, Wagner AD, Buch V, Parvizi J. **[Cross-regional coordination of activity in the human brain during autobiographical self-referential processing](https://doi.org/10.1073/pnas.2316021121)**. Proc Natl Acad Sci U S A. 2024 Aug 6;121(32):e2316021121.
 
