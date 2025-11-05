@@ -9,6 +9,8 @@ layout: default
 
 ## Selected Publications
 
+[2025] Gallingani, C., Miller, Z. A., Mandelli, M. L., Rosen, H. J., Ezzes, Z., Lin, M., Rodriguez, D., Grinberg, L. T., Spina, S., Seeley, W. W., Miller, B., Gorno-Tempini, M. L.\*, & Pinheiro-Chagas, P.\* **[Agentic Generative Artificial Intelligence System for Classification of Pathology-Confirmed Primary Progressive Aphasia Variants](https://doi.org/10.1101/2025.10.28.25338977)**. *medRxiv*. https://doi.org/10.1101/2025.10.28.25338977
+
 [2025] Tang, A. S., Zeng, B. Z. D., Rankin, K. P., Gorno-Tempini, M. L., Seeley, W. W., Rosen, H. J., Rabinovici, G. D., Oskotsky, T. T., Sirota, M., & Pinheiro-Chagas, P. **[Characterizing Dementia Phenotypes from Unstructured EHR Notes with Generative AI and Interpretable Machine Learning](https://doi.org/10.1101/2025.10.01.25336815)**. *medRxiv*. https://doi.org/10.1101/2025.10.01.25336815
 
 [2025] Cheng, Y. W., Pinheiro-Chagas, P., Gorno-Tempini, M. L., & Tee, B. L. **[Redefining Language and Neurodegeneration Through PPA: Clinical Phenotypes, Network Vulnerability, and Global Research Directions](https://doi.org/10.2496/hbfr.45.159)**. *Higher Brain Function Research*, *45*(3), 159-175. https://doi.org/10.2496/hbfr.45.159
@@ -27,7 +29,7 @@ layout: default
 
 [2022] Tan, K. M., Daitch, A. L., Pinheiro-Chagas, P., Fox, K. C. R., Parvizi, J., & Lieberman, M. D. **[Electrocorticographic evidence of a common neurocognitive sequence for mentalizing about the self and others](https://doi.org/10.1038/s41467-022-29510-2)**. *Nature Communications*, *13*(1), 1919. https://doi.org/10.1038/s41467-022-29510-2
 
-[2021] Pinheiro-Chagas, P.*, Liu, N.*, Sava-Segal, C., Kastner, S., Chen, Q., & Parvizi, J. **[Overlapping Neuronal Population Responses in the Human Parietal Cortex during Visuospatial Attention and Arithmetic Processing](https://doi.org/10.1162/jocn_a_01775)**. *Journal of Cognitive Neuroscience*, *33*(12), 2548-2558. https://doi.org/10.1162/jocn_a_01775
+[2021] Pinheiro-Chagas, P.\*, Liu, N.\*, Sava-Segal, C., Kastner, S., Chen, Q., & Parvizi, J. **[Overlapping Neuronal Population Responses in the Human Parietal Cortex during Visuospatial Attention and Arithmetic Processing](https://doi.org/10.1162/jocn_a_01775)**. *Journal of Cognitive Neuroscience*, *33*(12), 2548-2558. https://doi.org/10.1162/jocn_a_01775
 
 [2021] Parvizi, J., Braga, R. M., Kucyi, A., Veit, M. J., Pinheiro-Chagas, P., Perry, C., Sava-Segal, C., Zeineh, M., van Staalduinen, E. K., Henderson, J. M., & Markert, M. **[Altered sense of self during seizures in the posteromedial cortex](https://doi.org/10.1073/pnas.2100522118)**. *Proceedings of the National Academy of Sciences*, *118*(29), e2100522118. https://doi.org/10.1073/pnas.2100522118
 
@@ -43,7 +45,7 @@ layout: default
 
 [2019] Pinheiro-Chagas, P., Piazza, M., & Dehaene, S. **[Decoding the processing stages of mental arithmetic with magnetoencephalography](https://doi.org/10.1016/j.cortex.2018.07.018)**. *Cortex*, *114*, 124-139. https://doi.org/10.1016/j.cortex.2018.07.018
 
-[2018] Pinheiro-Chagas, P., Didino, D., Haase, V. G., Wood, G., & Knops, A. **[The Developmental Trajectory of the Operational Momentum Effect](https://doi.org/10.3389/fpsyg.2018.01062)**. *Frontiers in Psychology*, *9*, 1062. https://doi.org/10.3389/fpsyg.2018.01062
+[2018] Pinheiro-Chagas, P.\*, Didino, D.\*, Haase, V. G., Wood, G., & Knops, A. **[The Developmental Trajectory of the Operational Momentum Effect](https://doi.org/10.3389/fpsyg.2018.01062)**. *Frontiers in Psychology*, *9*, 1062. https://doi.org/10.3389/fpsyg.2018.01062
 
 [2018] Pinheiro-Chagas, P., Daitch, A., Parvizi, J., & Dehaene, S. **[Brain Mechanisms of Arithmetic: A Crucial Role for Ventral Temporal Cortex](https://doi.org/10.1162/jocn_a_01319)**. *Journal of Cognitive Neuroscience*, *30*(12), 1757-1772. https://doi.org/10.1162/jocn_a_01319
 
