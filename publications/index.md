@@ -9,7 +9,7 @@ layout: default
 
 ## Selected Publications
 
-[2025] Breithaupt, A. G., Tang, A., Paolillo, E. W., Bibars, M., Johnson, E. C. B., Saloner, R., Possin, K. L., Windon, C. C., Hill-Jarrett, T. G., Giorgio, J., Rauschecker, A. M., Kwon, H., Vonk, J. M. J., & Pinheiro-Chagas, P. **[Review of artificial intelligence for clinical use in Alzheimer's disease and related dementias](/publications/Publised%20AI%20in%20ADRD%20Review%20SIN_20250053.pdf)**. *Seminars in Neurology*. https://doi.org/10.1055/a-2744-9871
+[2025] Breithaupt, A. G., Tang, A., Paolillo, E. W., Bibars, M., Johnson, E. C. B., Saloner, R., Possin, K. L., Windon, C. C., Hill-Jarrett, T. G., Giorgio, J., Rauschecker, A. M., Kwon, H., Vonk, J. M. J., & Pinheiro-Chagas, P. **[Review of artificial intelligence for clinical use in Alzheimer's disease and related dementias](/publications/breithaupt_2025_ai_review_alzheimers_seminars_neurology.pdf)**. *Seminars in Neurology*. https://doi.org/10.1055/a-2744-9871
 
 [2025] Gallingani, C., Miller, Z. A., Mandelli, M. L., Rosen, H. J., Ezzes, Z., Lin, M., Rodriguez, D., Grinberg, L. T., Spina, S., Seeley, W. W., Miller, B., Gorno-Tempini, M. L.\*, & Pinheiro-Chagas, P.\* **[Agentic Generative Artificial Intelligence System for Classification of Pathology-Confirmed Primary Progressive Aphasia Variants](https://doi.org/10.1101/2025.10.28.25338977)**. *medRxiv*. https://doi.org/10.1101/2025.10.28.25338977
 
