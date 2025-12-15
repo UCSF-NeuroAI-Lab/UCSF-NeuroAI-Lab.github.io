@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sreekar Accepted to Stanford University!"
+title: "Sreekar Baddepudi Accepted to Stanford University!"
 date: 2025-12-12
 ---
 
