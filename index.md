@@ -8,21 +8,18 @@ The **UCSF NeuroAI Lab** adopts a human-centered approach to developing **advanc
 
 
 ## Cognitive Neuroscience
-**Human symbolic cognition**. We study the development and decline of symbolic systems like **mathematics** and written language, as well as self-referential reasoning. We combine electrophysiology, neuroimaging, psychophysics,  neuropsychology, and electrical stimulation to study the processing stages and representational codes underlying cognitive operations.[➔ **Research**](/research)
-
-- ↻ **Insights from neuroscience** help us power our AI systems, which recursively help us better understand the brain ↺
+**Human symbolic cognition**. We study the development and decline of symbolic systems like **[mathematics](https://mathcognition.ucsf.edu/)** and written language, as well as self-referential reasoning. We combine electrophysiology, neuroimaging, psychophysics,  neuropsychology, and electrical stimulation to study the processing stages and representational codes underlying cognitive operations.[➔ **Research**](/research)
 
 &nbsp;
 
-The **NeuroAI Lab** operates at the [**UCSF Memory and Aging Center**](https://memory.ucsf.edu/){:target="_blank"}-[Department of Neurology](https://neurology.ucsf.edu/) - [**Weill Institude for Neuroscience**](https://weill.ucsf.edu/). We are also affiliated with the [**Bakar Computational Health Sciences Institute**](https://bakarinstitute.ucsf.edu/){:target="_blank"} and the [**Center for Intelligent Imaging (ci2)**](https://c2i2.ucsf.edu/){:target="_blank"}.
-
+The **NeuroAI Lab** operates at the [**UCSF Fein Memory and Aging Center**](https://memory.ucsf.edu/){:target="_blank"}-[Department of Neurology](https://neurology.ucsf.edu/) - [**Weill Institude for Neuroscience**](https://weill.ucsf.edu/). We are also affiliated with the [**Bakar Computational Health Sciences Institute**](https://bakarinstitute.ucsf.edu/){:target="_blank"}, [**Center for Intelligent Imaging (ci2)**](https://c2i2.ucsf.edu/){:target="_blank"}, and the [**UCSF Dyslexia Center**](https://dyslexia.ucsf.edu/){:target="_blank"} 
 
 <div style="text-align: center; margin: 0 auto; font-size: 1.5em;">
   <strong>We have several open positions!</strong> <a href="/careers"><strong>➔ Join our team</strong></a>
 </div>
 
 
-### AI Bits
+### News
 <ul class="posts">
   {% for post in site.posts limit:10 %}
     <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>

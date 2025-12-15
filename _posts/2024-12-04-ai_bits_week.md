@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "AI Bits for the week"
+title: "News for the week"
 date: 2024-12-04
 ---
 
 Dear MAC AI,
 
-Find below some cool AI bits of the week.
+Find below some cool news of the week.
 
 ## [NeuroAI for AI Safety](https://arxiv.org/abs/2411.12112)
 Patrick Mineault et al.

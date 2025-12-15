@@ -9,7 +9,7 @@ layout: default
 ↻ **Insights from neuroscience** help us power our AI systems, which recursively help us better understand the brain ↺
 </div> -->
 
-At the **NeuroAI Lab**, we bridge powerful AI with cognitive neuroscience to tackle two interrelated challenges: revolutionizing the discovery, diagnosis and care of neurodegenerative diseases and elucidating the neural substrates of human symbolic cognition. Check out our perspective paper on **[Integrating Generative Artificial Intelligence in ADRD: A Roadmap for Streamlining Diagnosis and Care in Neurodegenerative Diseases](https://arxiv.org/abs/2502.06842)**
+At the **NeuroAI Lab**, we bridge powerful AI with cognitive neuroscience to streameline the discovery, diagnosis and care of neurodegenerative diseases. Check out our perspective paper on **[Integrating Generative Artificial Intelligence in ADRD: A Roadmap for Streamlining Diagnosis and Care in Neurodegenerative Diseases](https://arxiv.org/abs/2502.06842)**
 
 - **[Agentic AI systems](#ehrgenai)** to reason about vast multimodal datasets, accelerating disease discovery.
 - **[Copilot decision support systems](#mac-copilot)** to scale specialist-level clinical and neuropathological diagnoses.
@@ -36,9 +36,8 @@ This project centers on developing and validating the voice Clinical Dementia Ra
 <img src="/figures/ai_voice_agent.png" alt="AI Voice Agents">
 </div>
 
-
-
-
+### Support
+We are generously supported by the [**NIH**](https://www.nih.gov/){:target="_blank"}, [**Eli Lilly**](https://www.lilly.com/){:target="_blank"}, [**Gates Ventures**](https://www.gatesnotes.com/){:target="_blank"},[**UCSF Dyslexia Center**](https://dyslexia.ucsf.edu/){:target="_blank"} and the [**UCSF Multitudes**](https://multitudes.ucsf.edu/){:target="_blank"}. 
 
 
 
