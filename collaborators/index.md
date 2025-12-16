@@ -26,5 +26,5 @@ layout: default
 ### Emory University
 **[Andrew Breithaupt](https://med.emory.edu/directory/profile/?u=ABREITH)** is an Assistant Professor and Behavioral Neurologist specialized in improving dementia diagnosis by using computer-based questionnaires, delivered in an audio-based format and completed by patients before they visit their doctor.
 
-
-
+### Washington University
+**[John Morris](https://profiles.wustl.edu/en/persons/john-morris/)** is the Harvey A and Dorismae Hacker Friedman Distinguished Professor of Neurology and Associate Director of the Knight Alzheimer's Disease Research Center.
