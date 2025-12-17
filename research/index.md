@@ -16,7 +16,7 @@ At the **NeuroAI Lab**, we bridge powerful AI with cognitive neuroscience to str
 - **[AI Conversational Agents](#conv-ai)** to conduct clinical assessments, streamlining data collection, monitoring and care.
 
 <div class="container" style="text-align: center;">
-<img src="/figures/vision.png" alt="Vision" style="width: 75%">
+<img src="/figures/vision.png" alt="Vision" style="width: 55%">
 </div>
 
 ### Foundation AI Models {#ehrgenai}
