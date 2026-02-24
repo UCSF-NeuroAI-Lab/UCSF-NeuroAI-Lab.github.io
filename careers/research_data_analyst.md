@@ -18,7 +18,7 @@ The research data analyst will work closely with a postdoctoral fellow during th
 
 The analyst will also support the monitoring of analytics pipelines, including the assessment of call quality, such as automatic speech recognition accuracy, dialogue coherence, reliability during adverse events, and token usage. They will also track user experience metrics like responsiveness, conversational flow, and interaction outcomes to ensure the technical robustness and overall effectiveness of the deployed AI voice agent systems.
 
-Additional responsibilities include contributing to the design and execution of benchmarking studies, ensuring the quality, security, and documented integrity of data workflows (primarily using UCSF Verse, a secure, HIPAA-compliant platform), and supporting the dissemination of results through presentations and publications.
+Additional responsibilities include contributing to the design and execution of benchmarking studies, ensuring the quality, security, and documented integrity of data workflows (within a secure, HIPAA-compliant platform), and supporting the dissemination of results through presentations and publications.
 
 ## Required Qualifications
 * Master’s or Ph.D. in Computer Science, Computational or Cognitive Neuroscience, Biomedical Engineering, Biostatistics, Data Science, or a related field.
