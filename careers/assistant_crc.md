@@ -1,17 +1,17 @@
 ---
-title: Assistant Clinical Research Coordinator – NeuroAI Lab
+title: Clinical Research Coordinator – NeuroAI Lab
 layout: default
 ---
 
-# Assistant Clinical Research Coordinator – NeuroAI Lab
+# Clinical Research Coordinator – NeuroAI Lab
 
 ## APPLY
 Please send a cover letter describing your interests, relevant experience, and specific fit for our lab and this position, a CV, and three names of references to [Pedro.Pinheiro-Chagas@ucsf.edu](mailto:Pedro.Pinheiro-Chagas@ucsf.edu).
 
 ## Job Summary
-The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for an Assistant Clinical Research Coordinator (Assistant CRC) to support innovative, cross-disciplinary research at the intersection of artificial intelligence, clinical neuroscience, and digital health. The successful candidate will join a collaborative team developing and evaluating AI-enabled systems—orchestrating studies spanning AI-powered clinical decision tools, multimodal data analysis, and new digital consent and data collection platforms—with the goal of advancing research and care in neurodegenerative diseases and cognition.
+The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for a Clinical Research Coordinator (CRC) to support innovative, cross-disciplinary research at the intersection of artificial intelligence, clinical neuroscience, and digital health. The successful candidate will join a collaborative team developing and evaluating AI-enabled systems—orchestrating studies spanning AI-powered clinical decision tools, multimodal data analysis, and new digital consent and data collection platforms—with the goal of advancing research and care in neurodegenerative diseases and cognition.
 
-The Assistant CRC may be responsible for the coordination of one or more single or multi-site, active, or follow-up clinical trials across the lab's project portfolio. Key responsibilities include assisting in preparing study protocols for initiation, helping design flow sheets, data forms, and source documents, and applying inclusion/exclusion eligibility criteria to candidate participants. The Assistant CRC will support participant recruitment, enrollment, registration, scheduling, and retention, working closely with research personnel to keep participants on protocol schedules. Additional duties include completing and submitting study forms to sponsors and agencies, collecting and entering data into study databases, maintaining data quality, assisting with data cleaning and preliminary analysis, and helping generate reports and tables. The role also involves attending team meetings, supporting project management across concurrent studies, and performing other duties as assigned.
+The CRC will be responsible for the coordination of one or more single or multi-site, active, or follow-up clinical trials across the lab's project portfolio. Key responsibilities include preparing study protocols for initiation, designing flow sheets, data forms, and source documents, and applying inclusion/exclusion eligibility criteria to candidate participants. The CRC will manage participant recruitment, enrollment, registration, scheduling, and retention, working closely with research personnel to keep participants on protocol schedules. Additional duties include completing and submitting study forms to sponsors and agencies, collecting and entering data into study databases, maintaining data quality, data cleaning and preliminary analysis, and generating reports and tables. The role also involves attending team meetings, supporting project management across concurrent studies, and performing other duties as assigned.
 
 This position offers exceptional training in translational research, exposure to advanced clinical and AI workflows, and the opportunity to develop strong project management skills within a vibrant research environment.
 
