@@ -6,7 +6,7 @@ layout: default
 # Data Scientist – NeuroAI Lab
 
 ## APPLY
-Please send a cover letter describing your interests, relevant experience, and specific fit for our lab and this position, a CV, and three names of references to [Pedro.Pinheiro-Chagas@ucsf.edu](mailto:Pedro.Pinheiro-Chagas@ucsf.edu).
+Please send a cover letter describing your interests, relevant experience, and specific fit for our lab and this position, a CV, and three names of references to [Pedro.PinheiroChagas@ucsf.edu](mailto:Pedro.PinheiroChagas@ucsf.edu).
 
 ## Job Summary
 The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for a Data Scientist to support and advance our research initiatives at the intersection of AI and cognitive neuroscience. The successful candidate will contribute to a multidisciplinary team developing cutting-edge AI systems for the discovery, diagnosis, and care of neurodegenerative diseases.

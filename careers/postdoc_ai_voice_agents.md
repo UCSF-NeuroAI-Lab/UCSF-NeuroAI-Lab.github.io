@@ -6,7 +6,7 @@ layout: default
 # Postdoctoral Fellow – Conversational AI Agents
 
 ## APPLY
-Please send a cover letter explaining your background, relevant experience, and specific fit for our lab and this project, a CV, and three names of references to [Pedro.Pinheiro-Chagas@ucsf.edu](mailto:Pedro.Pinheiro-Chagas@ucsf.edu).
+Please send a cover letter explaining your background, relevant experience, and specific fit for our lab and this project, a CV, and three names of references to [Pedro.PinheiroChagas@ucsf.edu](mailto:Pedro.PinheiroChagas@ucsf.edu).
 
 ## Job Summary
 The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for a postdoctoral position focused on designing Conversational AI Agents for Neurology Healthcare. The successful candidate will join a multidisciplinary team at the intersection of cutting-edge AI and cognitive neuroscience, with the aim to advance discovery, diagnosis, and care of neurodegenerative diseases. The main project will center on developing conversational AI agents—including voice and text-based systems—to administer the Clinical Dementia Rating (CDR). The CDR is a crucial tool in clinical trials for assessing the severity and progression of dementia. Co-led by experts Michael W. Weiner, M.D., and Rachel L. Nosheny, Ph.D., the collaborative project offers unique mentorship and high foundational impact.

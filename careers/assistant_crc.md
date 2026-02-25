@@ -6,7 +6,7 @@ layout: default
 # Clinical Research Coordinator – NeuroAI Lab
 
 ## APPLY
-Please send a cover letter describing your interests, relevant experience, and specific fit for our lab and this position, a CV, and three names of references to [Pedro.Pinheiro-Chagas@ucsf.edu](mailto:Pedro.Pinheiro-Chagas@ucsf.edu).
+Please send a cover letter describing your interests, relevant experience, and specific fit for our lab and this position, a CV, and three names of references to [Pedro.PinheiroChagas@ucsf.edu](mailto:Pedro.PinheiroChagas@ucsf.edu).
 
 ## Job Summary
 The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for a Clinical Research Coordinator (CRC) to support innovative, cross-disciplinary research at the intersection of artificial intelligence, clinical neuroscience, and digital health. The successful candidate will join a collaborative team developing and evaluating AI-enabled systems—orchestrating studies spanning AI-powered clinical decision tools, multimodal data analysis, and new digital consent and data collection platforms—with the goal of advancing research and care in neurodegenerative diseases and cognition.
