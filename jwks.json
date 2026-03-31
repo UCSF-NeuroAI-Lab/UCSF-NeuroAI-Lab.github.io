@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS384",
+      "n": "0stEShEYeEuhyukeii0w459G-u7P01CjEizGT8m0v9HNh22ObfrCIkGJ1oI5z2QPlQMlIquk3q3a4x3Ispxo6svJaViEL3VYLuAc1YlRIqF4YdC9WuPsoqZ3xQAx_Kuz9Xl8kAtKXCUagS2Lyopv1NSg5wgFNVeEwOiZiiIRUufnR3NQjPsR7lByHZ0P8Vqp8bUFB417BebBbRRfmOgdepzzBkY3kDsavRdj3cDH-9-JBID_KpWHDTS8SN_9C1N0UrGEJ3IWR7V1Tarkgq9wHoemD6JPmyKbLmdZ4bVfo4hH4dKoWJ5H7IYNPtmMctjYegt0fODgnX5c8ymHJStCcQ",
+      "e": "AQAB",
+      "kid": "mac-ai-key-1"
+    }
+  ]
+}
