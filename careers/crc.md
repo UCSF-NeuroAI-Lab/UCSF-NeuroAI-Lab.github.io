@@ -1,17 +1,17 @@
 ---
-title: Clinical Research Coordinator – NeuroAI Lab
+title: Clinical Research Coordinator / Lab Manager – NeuroAI Lab
 layout: default
 ---
 
-# Clinical Research Coordinator – NeuroAI Lab (25% effort)
+# Clinical Research Coordinator / Lab Manager – NeuroAI Lab (25% effort)
 
 ## APPLY
 Please send a cover letter describing your interests, relevant experience, and specific fit for our lab and this position, a CV, and three names of references to [Pedro.PinheiroChagas@ucsf.edu](mailto:Pedro.PinheiroChagas@ucsf.edu).
 
 ## Job Summary
-The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for a Clinical Research Coordinator (CRC) at 25% effort to support innovative, cross-disciplinary research at the intersection of artificial intelligence, clinical neuroscience, and digital health. The successful candidate will join a collaborative team developing and evaluating AI-enabled systems—orchestrating studies spanning AI-powered clinical decision tools, multimodal data analysis, and new digital consent and data collection platforms—with the goal of advancing research and care in neurodegenerative diseases and cognition.
+The NeuroAI Lab at UCSF, led by Assistant Professor Pedro Pinheiro-Chagas, invites applications for a Clinical Research Coordinator / Lab Manager (CRC) at 25% effort to support innovative, cross-disciplinary research at the intersection of artificial intelligence, clinical neuroscience, and digital health. The successful candidate will join a collaborative team developing and evaluating AI-enabled systems—orchestrating studies spanning AI-powered clinical decision tools and multimodal data analysis—with the goal of advancing research and care in neurodegenerative diseases and cognition.
 
-The CRC will be responsible for coordinating research studies across the lab's project portfolio. Key responsibilities include managing participant recruitment, consent, scheduling, and retention, designing data collection forms and source documents, and applying inclusion/exclusion eligibility criteria to candidate participants. The CRC will also collect and enter data into research databases, maintain data quality, support data cleaning and preliminary analysis, and generate reports. Additional duties include preparing and maintaining IRB submissions and amendments, ensuring regulatory compliance, attending team meetings, supporting project management across concurrent studies, and performing other duties as assigned.
+The CRC will be responsible for coordinating research studies across the lab's project portfolio. Key responsibilities include managing participant recruitment, designing data collection forms, collecting and entering data into research databases, maintaining data quality, supporting data cleaning and preliminary analysis, and generating reports. Additional duties include preparing and maintaining IRB submissions and amendments, ensuring regulatory compliance, attending team meetings, supporting project management across concurrent studies, and performing other duties as assigned.
 
 This position offers exceptional training in translational research, exposure to advanced clinical and AI workflows, and the opportunity to develop strong project management skills within a vibrant research environment.
 
