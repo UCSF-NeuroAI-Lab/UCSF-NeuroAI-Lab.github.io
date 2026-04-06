@@ -29,5 +29,8 @@ The ideal candidate will have strong programming skills and experience with gene
 * Knowledge of data security, privacy, and regulatory standards for clinical applications (e.g., HIPAA compliance).
 * Experience with deep learning frameworks (PyTorch, TensorFlow) and cloud computing platforms.
 * Track record of peer-reviewed publications or contributions to open-source projects.
-* Interest in or experience with agentic AI architectures, retrieval-augmented generation (RAG), or multi-agent systems.
+* Experience with agentic AI architectures, workflow orchestration, and human-AI interaction design.
 * Ability to thrive in a fast-paced, multidisciplinary research environment.
+
+## Research Environment / Training Context
+The NeuroAI Lab is directed by Pedro Pinheiro-Chagas, PhD, and operates at the UCSF Edward and Pearl Fein Memory and Aging Center (MAC) in the Department of Neurology of the Weill Institute for Neurosciences. The lab is also affiliated with the Bakar Computational Health Sciences Institute and the Center for Intelligent Imaging (ci2). This unique positioning at the intersection of clinical neuroscience and AI provides the data scientist with direct access to world-class clinical collaborators, deeply phenotyped patient cohorts, and cutting-edge computational infrastructure. The data scientist will benefit from close mentorship by Dr. Pinheiro-Chagas and senior collaborators across neurology, neuropsychology, and radiology, with opportunities to present at international conferences, contribute to publications, and develop expertise at the forefront of health AI. The UCSF Fein MAC is one of the premier dementia research centers in the world, offering an exceptionally rich and collaborative environment for translational neuroscience and clinical AI research.
