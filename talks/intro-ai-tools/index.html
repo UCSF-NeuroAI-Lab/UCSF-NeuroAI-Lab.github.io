@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction on how to use AI tools at UCSF · Pedro Pinheiro-Chagas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Spectral:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:    #F4F7FB;
+  --slate:    #052049;
+  --clay:     #1C75BC;
+  --oat:      #DCE8F3;
+  --olive:    #2F8FA0;
+  --rust:     #155C92;
+  --path:     #C23B33;   /* clinical red, for cautions/errors */
+  --gray-150: #EDF1F6;
+  --gray-300: #CBD5E1;
+  --gray-500: #71808F;
+  --gray-700: #36465A;
+  --white:    #FFFFFF;
+  --accent-lt:#6FB7EE;   /* light clinical blue, accent on navy */
+  --serif: 'Newsreader', ui-serif, Georgia, serif;
+  --body:  'Spectral', ui-serif, Georgia, serif;
+  --mono:  'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--body);
+  color: var(--gray-700);
+  background:
+    radial-gradient(circle at 10% 6%, rgba(28,117,188,0.07), transparent 42%),
+    radial-gradient(circle at 90% 3%, rgba(5,32,73,0.055), transparent 38%),
+    var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+/* DECK SHELL */
+.slide {
+  width: 100vw; height: 100vh;
+  scroll-snap-align: start; scroll-snap-stop: always;
+  display: flex; align-items: center; justify-content: center;
+  padding: 9vh 8vw; position: relative;
+}
+.slide-inner { width: 100%; max-width: 900px; }
+.slide.invert {
+  color: var(--ivory);
+  background:
+    radial-gradient(circle at 16% 20%, rgba(28,117,188,0.22), transparent 46%),
+    radial-gradient(circle at 86% 86%, rgba(28,117,188,0.10), transparent 44%),
+    var(--slate);
+}
+
+/* TYPOGRAPHY */
+.eyebrow {
+  font-family: var(--mono); font-size: 12px; text-transform: uppercase;
+  letter-spacing: 0.18em; color: var(--clay); margin-bottom: 34px;
+}
+.invert .eyebrow { color: #9DC6EA; }
+
+.title-slide h1 {
+  font-family: var(--serif); font-weight: 500;
+  font-size: clamp(46px, 6.6vw, 78px); line-height: 1.04;
+  letter-spacing: -0.022em; color: var(--white); max-width: 17ch;
+}
+.title-slide h1 em { font-style: italic; color: var(--accent-lt); }
+
+.byline {
+  margin-top: 54px; font-family: var(--mono); font-size: 14px;
+  color: var(--ivory); letter-spacing: 0.02em;
+}
+.byline .who { font-weight: 500; }
+.affil {
+  list-style: none; margin-top: 14px; font-family: var(--mono);
+  font-size: 12px; line-height: 1.85; color: #93A7C5; letter-spacing: 0.015em;
+}
+
+/* CONTENT SLIDES */
+.slide.figs { padding: 5vh 1.6vw; }
+.slide-inner.wide { max-width: 1560px; }
+h2 {
+  font-family: var(--serif); font-weight: 500;
+  font-size: clamp(28px, 3.2vw, 40px); line-height: 1.12;
+  letter-spacing: -0.018em; color: var(--slate);
+}
+.figs .eyebrow { margin-bottom: 12px; }
+.note-lead {
+  font-family: var(--body); font-size: clamp(15px, 1.35vw, 17.5px);
+  line-height: 1.5; color: var(--gray-700); max-width: 900px; margin-top: 10px;
+}
+.note-lead .src {
+  display: block; margin-top: 8px; font-family: var(--mono);
+  font-size: 11.5px; color: var(--rust); letter-spacing: 0.02em;
+}
+
+/* FIGURE ROW: widths track each plot's aspect ratio so the heights match */
+.fig-row { display: flex; gap: 16px; margin-top: 18px; align-items: stretch; }
+figure.fig {
+  margin: 0; flex-basis: 0; display: flex; flex-direction: column;
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 11px;
+  padding: 9px;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 18px 38px -28px rgba(5,32,73,0.30);
+}
+figure.fig img {
+  width: 100%; height: auto; max-height: 72vh;
+  object-fit: contain; display: block; border-radius: 4px;
+}
+figure.fig figcaption {
+  font-family: var(--mono); font-size: 12px; line-height: 1.4;
+  color: var(--gray-500); margin-top: 10px;
+}
+figure.fig figcaption b { color: var(--slate); font-weight: 600; }
+
+/* CONCEPT / COMPARE SLIDES */
+.slide-inner.mid { max-width: 1080px; }
+.slide.concept { padding: 7vh 6vw; }
+.lead {
+  font-family: var(--body); font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.5; color: var(--gray-700); max-width: 64ch; margin-top: 14px;
+}
+.lead b { color: var(--slate); font-weight: 600; }
+
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+.card {
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 16px;
+  padding: 24px 26px 22px;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 24px 46px -34px rgba(5,32,73,0.28);
+}
+.card.agentic {
+  border-color: rgba(28,117,188,0.55);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(28,117,188,0.08), transparent 55%),
+    var(--white);
+}
+.card .tag {
+  font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.16em; color: var(--gray-500); margin-bottom: 9px;
+}
+.card.agentic .tag { color: var(--clay); }
+.card h3 {
+  font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em;
+  font-size: clamp(19px, 2.1vw, 26px); color: var(--slate); margin-bottom: 15px;
+}
+.card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.card li {
+  position: relative; padding-left: 21px;
+  font-family: var(--body); font-size: clamp(13.5px, 1.2vw, 15.5px);
+  line-height: 1.45; color: var(--gray-700);
+}
+.card li::before {
+  content: ""; position: absolute; left: 2px; top: 8px;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--gray-300);
+}
+.card.agentic li::before { background: var(--clay); }
+
+.takeaway {
+  margin-top: 24px; font-family: var(--body); font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.5; color: var(--gray-700);
+  border-left: 3px solid var(--clay); padding-left: 16px;
+}
+.takeaway b { color: var(--slate); font-weight: 600; }
+
+/* RESOURCE SLIDE */
+.slide.resources { padding: 6vh 4vw; }
+.resources .eyebrow { margin-bottom: 12px; }
+.res-row { display: flex; gap: 20px; margin-top: 24px; align-items: stretch; }
+.res-row .card { flex: 1 1 0; }
+.card .banner {
+  display: block; width: fit-content; max-width: 100%; margin: 0 auto 16px;
+  overflow: hidden; border: 1.5px solid var(--gray-300); border-radius: 10px; background: #131314;
+}
+.card .banner img { display: block; height: 150px; width: auto; max-width: 100%; }
+
+.notes-row { display: flex; gap: 16px; margin-top: 18px; align-items: stretch; }
+.note {
+  flex: 1 1 0; display: flex; gap: 12px; align-items: baseline;
+  border: 1.5px solid; border-radius: 12px; padding: 12px 15px;
+}
+.note .lab {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em;
+  text-transform: uppercase; white-space: nowrap; flex: 0 0 auto;
+}
+.note p {
+  font-family: var(--body); font-size: clamp(12.5px, 1.05vw, 14px);
+  line-height: 1.42; color: var(--gray-700);
+}
+.note a { text-decoration: underline; text-underline-offset: 2px; }
+.note.ok { border-color: rgba(47,143,160,0.45); background: rgba(47,143,160,0.07); }
+.note.ok .lab, .note.ok a { color: var(--olive); }
+.note.warn { border-color: rgba(194,59,51,0.32); background: rgba(194,59,51,0.05); }
+.note.warn .lab { color: var(--path); }
+.note.warn a { color: var(--rust); }
+
+/* GAP LIST SLIDE (vertical pairs) */
+.slide.gaps { padding: 6vh 5vw; }
+.slide-inner.gapw { max-width: 1200px; }
+.gaplist { margin-top: 24px; display: flex; flex-direction: column; gap: 15px; }
+.p-llm, .p-fix {
+  position: relative; padding-left: 26px; line-height: 1.35;
+  font-family: var(--body); font-size: clamp(15px, 1.6vw, 21px);
+}
+.p-llm { color: var(--gray-500); }
+.p-llm::before {
+  content: ""; position: absolute; left: 5px; top: 0.62em;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--gray-300);
+}
+.p-fix { margin: 4px 0 0 26px; font-weight: 600; color: var(--clay); }
+.p-fix::before {
+  content: ""; position: absolute; left: 5px; top: 0.58em;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--clay);
+}
+.p-fix .d { font-weight: 400; }
+.footer-cite {
+  position: absolute; right: 5vw; bottom: 5.5vh;
+  font-family: var(--body); font-style: italic; color: var(--gray-500);
+  font-size: clamp(12px, 1.05vw, 14px);
+}
+.footer-cite .u { text-decoration: underline; text-underline-offset: 2px; }
+
+/* CASE / EXAMPLE SLIDE */
+.slide.example { padding: 5.5vh 4vw; }
+.example .eyebrow { margin-bottom: 12px; }
+.ex-row { display: flex; gap: 28px; margin-top: 20px; align-items: flex-start; }
+.ex-figure { flex: 1.3 1 0; position: relative; }
+.ex-figure img {
+  width: 100%; height: auto; display: block;
+  border: 1.5px solid var(--gray-300); border-radius: 12px;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 22px 44px -30px rgba(5,32,73,0.35);
+}
+.ex-figure .flag {
+  position: absolute; top: 12px; left: 12px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  background: var(--path); color: #fff; padding: 5px 11px; border-radius: 999px;
+  box-shadow: 0 6px 16px -6px rgba(194,59,51,0.6);
+}
+.lessons { flex: 1 1 0; display: flex; flex-direction: column; gap: 16px; padding-top: 2px; }
+.lesson { border-left: 3px solid var(--gray-300); padding-left: 15px; }
+.lesson.l1 { border-color: var(--path); }
+.lesson.l2 { border-color: var(--clay); }
+.lesson.l3 { border-color: var(--olive); }
+.lesson p {
+  font-family: var(--body); font-size: clamp(13px, 1.2vw, 16px);
+  line-height: 1.45; color: var(--gray-700);
+}
+.lesson p b { color: var(--slate); font-weight: 600; }
+
+/* WAYS-TO-USE CARDS (icon header) */
+.card .hrow { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
+.card .hrow h3 { margin-bottom: 0; }
+.card .ic { width: 26px; height: 26px; flex: 0 0 auto; color: var(--clay); }
+
+/* SKILLS SLIDE */
+.slide.skills { padding: 6.5vh 5vw; }
+.skills .eyebrow { margin-bottom: 12px; }
+.skills .lead { max-width: 80ch; }
+.skill-row {
+  display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 30px;
+  margin-top: 26px; align-items: start;
+}
+.anatomy { display: flex; flex-direction: column; gap: 17px; margin-top: 2px; }
+.anatomy .it { display: grid; grid-template-columns: 122px 1fr; gap: 14px; align-items: baseline; }
+.anatomy .k {
+  font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.11em; color: var(--clay); line-height: 1.5;
+}
+.anatomy .v {
+  font-family: var(--body); font-size: clamp(13.5px, 1.15vw, 16px);
+  line-height: 1.42; color: var(--gray-700);
+}
+.anatomy .v b { color: var(--slate); font-weight: 600; }
+.codeblock {
+  margin: 0; background: var(--slate); border-radius: 13px; padding: 18px 20px;
+  font-family: var(--mono); font-size: clamp(10.5px, 1.0vw, 12.5px); line-height: 1.62;
+  color: #BFD2E8; white-space: pre; overflow: hidden;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 24px 46px -32px rgba(5,32,73,0.5);
+}
+.codeblock .kw { color: #6FB7EE; }
+.codeblock .str { color: #74C8BC; }
+.codeblock .cm { color: #6E86A6; font-style: italic; }
+.codeblock .hd { color: #9DC6EA; }
+.code-cap {
+  margin-top: 10px; font-family: var(--mono); font-size: 11px;
+  color: var(--gray-500); letter-spacing: 0.02em;
+}
+.recursion { max-width: 920px; margin: 24px auto 0; }
+.rec-loop { width: 100%; height: auto; display: block; }
+.rec-loop text { font-family: var(--mono); }
+.rec-cap {
+  margin-top: 13px; text-align: center;
+  font-family: var(--body); font-size: clamp(13.5px, 1.2vw, 16.5px);
+  line-height: 1.45; color: var(--gray-700);
+}
+.rec-cap b { color: var(--clay); font-weight: 600; }
+.rec-cap .kbd { font-family: var(--mono); font-size: 0.9em; color: var(--rust); }
+
+/* PLAN MODE SLIDE */
+.slide.plan { padding: 6vh 5vw; }
+.plan .eyebrow { margin-bottom: 12px; }
+.plan-row { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 28px; margin-top: 24px; align-items: start; }
+.prompt { background: var(--gray-150); border: 1.5px solid var(--gray-300); border-radius: 14px; padding: 17px 19px; }
+.prompt .who {
+  font-family: var(--mono); font-size: 10.5px; text-transform: uppercase;
+  letter-spacing: 0.14em; color: var(--gray-500); margin-bottom: 9px;
+}
+.prompt p { font-family: var(--body); font-size: clamp(14px, 1.3vw, 17px); line-height: 1.5; color: var(--slate); }
+.when { margin-top: 18px; }
+.when .wh {
+  font-family: var(--mono); font-size: 10.5px; text-transform: uppercase;
+  letter-spacing: 0.13em; color: var(--gray-500); margin-bottom: 9px;
+}
+.when ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.when li {
+  position: relative; padding-left: 18px;
+  font-family: var(--body); font-size: clamp(13px, 1.1vw, 15px); line-height: 1.4; color: var(--gray-700);
+}
+.when li::before {
+  content: ""; position: absolute; left: 2px; top: 0.62em;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--clay);
+}
+.plan-card {
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 16px;
+  padding: 18px 22px 16px;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 24px 46px -34px rgba(5,32,73,0.28);
+}
+.plan-card .phead { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.plan-card .ptag {
+  font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.13em;
+  color: var(--clay); background: var(--oat); padding: 5px 11px; border-radius: 999px;
+}
+.plan-card .phint { font-family: var(--mono); font-size: 10px; color: var(--gray-500); letter-spacing: 0.03em; }
+.steps { display: flex; flex-direction: column; gap: 11px; }
+.step { display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: start; }
+.step .n {
+  font-family: var(--mono); font-size: 11px; color: var(--gray-700);
+  background: var(--oat); border-radius: 7px; padding: 2px 0; text-align: center;
+}
+.step .t { font-family: var(--body); font-size: clamp(13px, 1.15vw, 15.5px); line-height: 1.42; color: var(--gray-700); }
+.step .t b { color: var(--slate); font-weight: 600; }
+
+/* HARNESS ENGINEERING SLIDE */
+.slide.harness { padding: 6vh 4.5vw; }
+.harness .eyebrow { margin-bottom: 12px; }
+.harness .lead { max-width: 94ch; }
+.harness-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 24px; align-items: stretch; }
+.hc {
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 14px;
+  padding: 17px 17px 16px; display: flex; flex-direction: column;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 22px 44px -34px rgba(5,32,73,0.26);
+}
+.hc .hc-tag { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.13em; color: var(--clay); }
+.hc h3 {
+  font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em;
+  font-size: clamp(17px, 1.8vw, 21px); color: var(--slate); margin: 5px 0 7px;
+}
+.hc .hc-desc {
+  font-family: var(--body); font-size: clamp(12.5px, 1.05vw, 14.5px);
+  line-height: 1.42; color: var(--gray-700); margin-bottom: 13px;
+}
+.hc .hc-visual { margin-top: 4px; }
+.hc .codeblock { font-size: clamp(9.5px, 0.85vw, 11.5px); padding: 12px 13px; line-height: 1.55; border-radius: 10px; }
+.loopmini { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.loopmini .ls {
+  font-family: var(--mono); font-size: clamp(10.5px, 0.95vw, 12px);
+  color: var(--slate); background: var(--oat); border-radius: 7px; padding: 5px 10px;
+}
+.loopmini .lr { font-family: var(--mono); font-size: 11px; color: var(--gray-500); padding-left: 6px; }
+.loopmini .rep { color: var(--clay); }
+.chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.pchip {
+  font-family: var(--mono); font-size: clamp(10.5px, 0.95vw, 12px); color: var(--rust);
+  border: 1.5px solid var(--gray-300); background: var(--gray-150); border-radius: 999px; padding: 5px 11px;
+}
+
+/* MCP / CONNECTORS SLIDE */
+.slide.mcp { padding: 6vh 5vw; }
+.mcp .eyebrow { margin-bottom: 12px; }
+.mcp .lead { max-width: 88ch; }
+.mcp-hub { max-width: 940px; margin: 16px auto 0; display: block; width: 100%; height: auto; }
+.mcp-hub text { font-family: var(--mono); }
+.mcp-cap {
+  margin-top: 14px; text-align: center;
+  font-family: var(--body); font-size: clamp(13.5px, 1.2vw, 16.5px); line-height: 1.45; color: var(--gray-700);
+}
+.mcp-cap b { color: var(--slate); font-weight: 600; }
+.mcp-cap .kbd { font-family: var(--mono); font-size: 0.9em; color: var(--rust); }
+
+/* WORKED EXAMPLE SLIDE (candidate screening) */
+.slide.worked { padding: 6vh 5vw; }
+.worked .eyebrow { margin-bottom: 12px; }
+.worked .lead { max-width: 96ch; }
+.flow { display: flex; align-items: stretch; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.fstep {
+  display: flex; flex-direction: column; justify-content: center; gap: 3px;
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 11px; padding: 9px 14px;
+}
+.fstep .l { font-family: var(--mono); font-size: clamp(10.5px, 1.0vw, 12px); color: var(--slate); }
+.fstep .s { font-family: var(--mono); font-size: 9.5px; color: var(--gray-500); letter-spacing: 0.02em; }
+.farrow { display: flex; align-items: center; color: var(--clay); font-family: var(--mono); font-size: 14px; }
+.restable { width: 100%; border-collapse: collapse; margin-top: 24px; }
+.restable th {
+  font-family: var(--mono); font-size: clamp(9px, 0.85vw, 10.5px); text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--gray-500); text-align: left; padding: 0 10px 9px 0; border-bottom: 1.5px solid var(--gray-300);
+}
+.restable th.cent, .restable td.cent { text-align: center; }
+.restable td {
+  font-family: var(--body); font-size: clamp(12px, 1.05vw, 14.5px); color: var(--gray-700);
+  padding: 10px 10px 10px 0; border-bottom: 1px solid var(--gray-150);
+}
+.restable td.cand { font-weight: 600; color: var(--slate); }
+.restable .mk { font-family: var(--mono); font-size: 12px; }
+.restable .ok2 { color: var(--olive); }
+.restable .no2 { color: var(--path); }
+.restable .cf { font-family: var(--mono); font-size: 9.5px; color: var(--gray-500); }
+.restable .sc { font-family: var(--mono); font-weight: 600; color: var(--gray-700); }
+.restable .sc.full { color: var(--olive); }
+.tcap { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; margin-top: 13px; }
+.tcap .ev { font-family: var(--body); font-style: italic; font-size: clamp(12px, 1.05vw, 14px); color: var(--gray-500); }
+.tcap .ev b { color: var(--slate); font-style: normal; font-weight: 600; }
+.vbadge {
+  font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--olive);
+  border: 1.5px solid rgba(47,143,160,0.45); background: rgba(47,143,160,0.08);
+  border-radius: 999px; padding: 5px 11px; white-space: nowrap;   flex: 0 0 auto;
+}
+
+/* REVIEWER RESPONSE SKILL SLIDE */
+.slide.reviewer { padding: 6vh 5vw; }
+.reviewer .eyebrow { margin-bottom: 12px; }
+.reviewer .lead { max-width: 94ch; }
+.rev-grid { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 30px; margin-top: 24px; align-items: start; }
+.rev-grid .when { margin-top: 2px; }
+.rev-grid .when ul { gap: 9px; }
+.rev-grid .when li { font-size: clamp(15px, 1.35vw, 18px); line-height: 1.45; }
+.rev-card {
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 16px; padding: 20px 24px;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 24px 46px -34px rgba(5,32,73,0.28);
+}
+.rev-card .rtag {
+  font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.13em;
+  color: var(--gray-500); margin-bottom: 11px;
+}
+.rev-card .cmt {
+  font-family: var(--body); font-weight: 600; font-style: italic; color: var(--slate);
+  font-size: clamp(14px, 1.25vw, 17px); line-height: 1.45; margin-bottom: 12px;
+}
+.rev-card .resp {
+  font-family: var(--body); font-size: clamp(13.5px, 1.2vw, 16px); line-height: 1.5;
+  color: var(--gray-700); margin-bottom: 13px;
+}
+.rev-card .msq {
+  font-family: var(--body); font-style: italic; color: var(--gray-700);
+  font-size: clamp(13px, 1.15vw, 15.5px); line-height: 1.5;
+  border-left: 3px solid var(--clay); padding: 8px 0 8px 16px;
+  background: rgba(28,117,188,0.045); border-radius: 0 8px 8px 0;
+}
+.rev-card .msq .lbl {
+  display: block; font-family: var(--mono); font-style: normal; font-size: 9.5px;
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--clay); margin-bottom: 5px;
+}
+.rev-card .pause {
+  display: flex; align-items: center; gap: 8px; margin-top: 16px; padding-top: 13px;
+  border-top: 1px solid var(--gray-150); font-family: var(--mono); font-size: 10.5px;
+  color: var(--clay); letter-spacing: 0.02em;
+}
+
+/* PAPERCLIP SLIDE */
+.slide.paperclip { padding: 6vh 5vw; }
+.paperclip .eyebrow { margin-bottom: 12px; }
+.paperclip .lead { max-width: 94ch; }
+.pc-grid {
+  display: grid; grid-template-columns: 0.95fr 1.08fr 0.97fr; gap: 20px;
+  margin-top: 24px; align-items: stretch;
+}
+.pc-card {
+  background: var(--white); border: 1.5px solid var(--gray-300); border-radius: 15px;
+  padding: 18px 19px 17px; display: flex; flex-direction: column; min-height: 268px;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 22px 44px -34px rgba(5,32,73,0.26);
+}
+.pc-card.primary {
+  border-color: rgba(28,117,188,0.55);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(28,117,188,0.08), transparent 56%),
+    var(--white);
+}
+.pc-tag {
+  font-family: var(--mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.13em; color: var(--clay); margin-bottom: 7px;
+}
+.pc-card h3 {
+  font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em;
+  font-size: clamp(18px, 1.9vw, 24px); color: var(--slate); margin-bottom: 9px;
+}
+.pc-card p {
+  font-family: var(--body); font-size: clamp(12.5px, 1.1vw, 15px);
+  line-height: 1.43; color: var(--gray-700);
+}
+.pc-code {
+  margin-top: 13px; background: var(--slate); border-radius: 11px; padding: 13px 14px;
+  font-family: var(--mono); font-size: clamp(9.5px, 0.86vw, 11.5px); line-height: 1.58;
+  color: #BFD2E8; white-space: pre-wrap; overflow-wrap: anywhere;
+}
+.pc-code .cm { color: #6E86A6; font-style: italic; }
+.pc-code .kw { color: #6FB7EE; }
+.pc-code .str { color: #74C8BC; }
+.pc-path {
+  margin-top: 10px; font-family: var(--mono); font-size: 10px; color: var(--rust);
+  background: var(--gray-150); border: 1.5px solid var(--gray-300);
+  border-radius: 999px; padding: 6px 10px; width: fit-content; max-width: 100%;
+}
+.pc-prompt {
+  margin-top: 13px; border-left: 3px solid var(--clay);
+  background: rgba(28,117,188,0.055); border-radius: 0 10px 10px 0;
+  padding: 11px 13px;
+}
+.pc-prompt .who {
+  display: block; font-family: var(--mono); font-size: 9.5px; text-transform: uppercase;
+  letter-spacing: 0.13em; color: var(--clay); margin-bottom: 5px;
+}
+.pc-prompt p { color: var(--slate); font-size: clamp(13px, 1.12vw, 15.5px); }
+.pc-flow { display: flex; flex-direction: column; gap: 8px; margin-top: 13px; }
+.pc-step {
+  display: grid; grid-template-columns: 25px 1fr; gap: 9px; align-items: center;
+  background: var(--gray-150); border: 1.5px solid var(--gray-300);
+  border-radius: 10px; padding: 7px 9px;
+}
+.pc-step .n {
+  width: 25px; height: 25px; border-radius: 50%;
+  background: rgba(28,117,188,0.13); color: var(--clay);
+  font-family: var(--mono); font-size: 11px; display: flex; align-items: center; justify-content: center;
+}
+.pc-step .t { font-family: var(--body); font-size: clamp(12.5px, 1.05vw, 14px); color: var(--gray-700); line-height: 1.35; }
+.pc-step .t b { color: var(--slate); font-weight: 600; }
+.pc-mini {
+  display: flex; gap: 7px; flex-wrap: wrap; margin-top: auto; padding-top: 15px;
+}
+.pc-mini span {
+  font-family: var(--mono); font-size: 10px; color: var(--rust);
+  border: 1.5px solid var(--gray-300); border-radius: 999px;
+  background: var(--gray-150); padding: 5px 9px;
+}
+
+/* JIRA / MCP-IN-PRACTICE SLIDE */
+.slide.jira { padding: 5vh 5vw; }
+.jira-col .step-label.more { margin-top: 18px; }
+.jira .eyebrow { margin-bottom: 12px; }
+.jira .lead { max-width: 94ch; }
+.jira-grid { display: grid; grid-template-columns: 1.02fr 1.08fr; gap: 30px; margin-top: 22px; align-items: start; }
+.jira-col .step-label {
+  font-family: var(--mono); font-size: 10.5px; text-transform: uppercase;
+  letter-spacing: 0.13em; color: var(--clay); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 9px;
+}
+.jira-col .step-label .num {
+  width: 19px; height: 19px; border-radius: 50%; background: var(--clay); color: #fff;
+  font-family: var(--mono); font-size: 11px; display: inline-flex; align-items: center; justify-content: center;
+}
+.jira .codeblock { font-size: clamp(10px, 0.92vw, 12px); white-space: pre-wrap; overflow-wrap: anywhere; }
+.jira .code-cap { margin-top: 10px; }
+.jira-note {
+  margin-top: 13px; font-family: var(--body); font-size: clamp(12.5px, 1.1vw, 15px);
+  line-height: 1.45; color: var(--gray-700);
+}
+.jira-note b { color: var(--slate); font-weight: 600; }
+.jira-note .kbd {
+  font-family: var(--mono); font-size: 0.85em; color: var(--rust);
+  background: var(--gray-150); border: 1.5px solid var(--gray-300); border-radius: 6px; padding: 1px 6px;
+}
+.jira-shot {
+  border: 1.5px solid var(--gray-300); border-radius: 13px; overflow: hidden; background: #0b1524;
+  box-shadow: 0 1px 0 rgba(5,32,73,0.02), 0 22px 44px -30px rgba(5,32,73,0.45);
+}
+.jira-shot img { width: 100%; height: auto; display: block; max-height: 48vh; object-fit: contain; }
+
+/* CLOSING SLIDE */
+.slide.close { padding: 8vh 7vw; }
+.close .eyebrow { margin-bottom: 20px; }
+.close h2 { color: var(--white); font-size: clamp(30px, 4vw, 52px); max-width: 18ch; }
+.close .lead { color: #C7D6EA; max-width: 72ch; margin-top: 12px; }
+.close .lead b { color: var(--white); }
+.close-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; margin-top: 30px; }
+.close-col .ch {
+  font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.14em; color: #9DC6EA; margin-bottom: 15px;
+  padding-bottom: 9px; border-bottom: 1px solid rgba(157,198,234,0.22);
+}
+.close-col ul, .close-col ol { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.close-col li {
+  font-family: var(--body); font-size: clamp(13.5px, 1.3vw, 16.5px);
+  line-height: 1.42; color: #DCE8F3; position: relative;
+}
+.close-col li b { color: var(--white); font-weight: 600; }
+.close-col.remember li { padding-left: 20px; }
+.close-col.remember li::before {
+  content: ""; position: absolute; left: 2px; top: 0.58em;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent-lt);
+}
+.close-col.steps ol { counter-reset: step; }
+.close-col.steps li { padding-left: 40px; counter-increment: step; min-height: 26px; padding-top: 2px; }
+.close-col.steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: rgba(111,183,238,0.15); border: 1px solid rgba(111,183,238,0.42);
+  color: var(--accent-lt); font-family: var(--mono); font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.close-foot {
+  margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(157,198,234,0.18);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.close-foot .ty {
+  font-family: var(--serif); font-style: italic; font-weight: 500;
+  font-size: clamp(22px, 2.6vw, 32px); color: var(--white);
+}
+.close-foot .sig {
+  font-family: var(--mono); font-size: 12px; color: #93A7C5;
+  letter-spacing: 0.02em; line-height: 1.7; text-align: right;
+}
+.close-foot .sig b { color: var(--accent-lt); font-weight: 500; }
+
+/* SLIDE COUNTER */
+#counter {
+  position: fixed; bottom: 22px; right: 28px;
+  font-family: var(--mono); font-size: 12px; color: #6E86A6;
+  user-select: none; z-index: 10;
+}
+
+@media (max-width: 640px) {
+  .slide { padding: 8vh 7vw; }
+  .byline { font-size: 12px; }
+  .fig-row { flex-direction: column; }
+  .compare { grid-template-columns: 1fr; }
+  .res-row { flex-direction: column; }
+  .notes-row { flex-direction: column; }
+  .ex-row { flex-direction: column; }
+  .skill-row { grid-template-columns: 1fr; }
+  .plan-row { grid-template-columns: 1fr; }
+  .harness-grid { grid-template-columns: 1fr; }
+  .rev-grid { grid-template-columns: 1fr; }
+  .pc-grid { grid-template-columns: 1fr; }
+  .jira-grid { grid-template-columns: 1fr; }
+  .close-grid { grid-template-columns: 1fr; gap: 26px; }
+}
+</style>
+</head>
+<body>
+
+  <!-- ============================================================
+       Slide 1 : Cover
+       ============================================================ -->
+  <section class="slide invert title-slide" id="s1">
+    <div class="slide-inner">
+      <div class="eyebrow">UCSF Brain Health Registry</div>
+      <h1>Introduction on how to use <em>AI&nbsp;tools</em> at UCSF</h1>
+      <div class="byline"><span class="who">Pedro Pinheiro-Chagas, PhD</span></div>
+      <ul class="affil">
+        <li>UCSF NeuroAI Lab</li>
+        <li>Department of Neurology, Fein Memory and Aging Center</li>
+        <li>Bakar Computational Health Sciences Institute</li>
+        <li>Center for Intelligent Imaging (ci2)</li>
+        <li>Weill Institute for Neurosciences</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 2 : What is agentic AI?
+       ============================================================ -->
+  <section class="slide concept" id="s2">
+    <div class="slide-inner mid">
+      <div class="eyebrow">Definition</div>
+      <h2>What is agentic AI?</h2>
+      <p class="lead">
+        Agentic AI does not just reply with text. It breaks a goal into steps, uses real
+        tools (your files, terminal, browser, data), acts, checks the result, and repeats
+        until the task is <b>done</b>.
+      </p>
+      <div class="compare">
+        <div class="card">
+          <div class="tag">Assistant</div>
+          <h3>Chatbot, like ChatGPT</h3>
+          <ul>
+            <li>You ask, it answers, one turn at a time</li>
+            <li>Returns text and suggestions</li>
+            <li>You copy the output and do the work yourself</li>
+            <li>Lives in the chat box, with no access to your systems</li>
+            <li>Best for drafting, explaining, brainstorming</li>
+          </ul>
+        </div>
+        <div class="card agentic">
+          <div class="tag">Coworker</div>
+          <h3>Agentic AI</h3>
+          <ul>
+            <li>You give a goal, it plans the steps</li>
+            <li>Takes actions: runs code, edits files, queries data, calls tools</li>
+            <li>Works inside your environment: repo, terminal, apps</li>
+            <li>Observes results and self-corrects in a loop</li>
+            <li>Carries the task end to end, then reports back</li>
+          </ul>
+        </div>
+      </div>
+      <p class="takeaway">
+        For real work, the shift is from <b>AI that tells you how</b> to
+        <b>AI that does it with you</b>: fewer copy-pastes, more finished tasks.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 3 : The shift to agentic AI (paper note)
+       ============================================================ -->
+  <section class="slide figs" id="s3">
+    <div class="slide-inner wide">
+      <div class="eyebrow">What the data shows</div>
+      <h2>The shift to agentic AI</h2>
+      <p class="note-lead">
+        Agentic coding is diffusing fast and broadly: Codex's share of output tokens climbs
+        across job functions, not just engineering.
+        <span class="src">&ldquo;The shift to agentic AI: evidence from Codex&rdquo; &middot; Fig. 3, share of output tokens by worker type</span>
+      </p>
+      <div class="fig-row">
+        <figure class="fig" style="flex-grow: 1.831">
+          <img src="assets/figure_3a.png" alt="Organizational users, by inferred job title">
+          <figcaption><b>(a)</b> Organizational users, by inferred job title</figcaption>
+        </figure>
+        <figure class="fig" style="flex-grow: 1.808">
+          <img src="assets/figure_3b.png" alt="OpenAI workers, by job function">
+          <figcaption><b>(b)</b> OpenAI workers, by job function</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 4 : AI resources at UCSF
+       ============================================================ -->
+  <section class="slide resources" id="s4">
+    <div class="slide-inner mid">
+      <div class="eyebrow">What you can use today</div>
+      <h2>AI resources at UCSF</h2>
+      <div class="res-row">
+        <div class="card">
+          <div class="tag">Available now</div>
+          <h3>ChatGPT Enterprise</h3>
+          <div class="banner">
+            <img src="assets/outlook-connect.png" alt="ChatGPT Enterprise Outlook Calendar and Email connectors">
+          </div>
+          <ul>
+            <li>Outlook integration: connect Outlook Calendar and Outlook Email</li>
+            <li>Read only for now (no creating events, no reading attachments)</li>
+            <li>Plus Projects, GPTs, Apps, and Deep Research</li>
+            <li>Limited credits, with a new weekly cap on the heaviest users</li>
+            <li>Want more? Associate your account with a speedtype</li>
+          </ul>
+        </div>
+        <div class="card agentic">
+          <div class="tag">Real agentic</div>
+          <h3>UCSF Versa API + Codex</h3>
+          <ul>
+            <li>OpenAI models via Microsoft Azure, delivered through UCSF Versa</li>
+            <li>Versa is UCSF's secure platform for PHI-safe inference</li>
+            <li>Needs a speedtype, includes about $200 / month of credit</li>
+            <li>Unlocks Codex, both the CLI and the desktop app</li>
+            <li>Truly agentic: reads and edits your local files</li>
+            <li>Runs in your environment or VM, multi-step tasks end to end</li>
+          </ul>
+        </div>
+      </div>
+      <div class="notes-row">
+        <div class="note ok">
+          <span class="lab">PHI-safe</span>
+          <p>Both ChatGPT Enterprise and the Versa API are cleared for PHI data. Inputs are not retained for model training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 5 : LLM gaps, agentic fixes (clinical)
+       ============================================================ -->
+  <section class="slide gaps" id="s5">
+    <div class="slide-inner gapw">
+      <h2>The decade of AI Agents</h2>
+      <div class="gaplist">
+        <div class="gap-item">
+          <p class="p-llm">LLMs excel at complex tasks: board exams, benchmarks (including diagnosis)</p>
+          <p class="p-fix">Huge potential to revolutionize clinical care, <span class="d">programmed for specific use cases</span></p>
+        </div>
+        <div class="gap-item">
+          <p class="p-llm">Massive jagged intelligence: gap between model strengths and weaknesses</p>
+          <p class="p-fix">Harness closes the gap <span class="d">(planning, context, verification)</span></p>
+        </div>
+        <div class="gap-item">
+          <p class="p-llm">Hallucinations are declining, but persist</p>
+          <p class="p-fix">Scientific and empirical grounding</p>
+        </div>
+        <div class="gap-item">
+          <p class="p-llm">No continual learning: model's knowledge lags current medical information</p>
+          <p class="p-fix">Access to updated information <span class="d">(e.g. FDA, clinical trials, Dx criteria, treatment)</span></p>
+        </div>
+        <div class="gap-item">
+          <p class="p-llm">Limited context window and sample inefficiency</p>
+          <p class="p-fix">Effectively compress information <span class="d">(vector databases, knowledge graphs)</span></p>
+        </div>
+        <div class="gap-item">
+          <p class="p-llm">LLMs lack stats metrics for predictions or classifications, limiting implementation and trust</p>
+          <p class="p-fix">Combine with traditional ML models <span class="d">(quantitative, interpretable features)</span></p>
+        </div>
+        <div class="gap-item">
+          <p class="p-llm">Most studies on genAI for diagnostics use simulated or journal-curated data</p>
+          <p class="p-fix">Need for real data and real-world use cases: <span class="d">clinical validation</span></p>
+        </div>
+      </div>
+      <div class="footer-cite">Breithaupt, (&hellip;), Pinheiro-Chagas (in press) <span class="u">Nature Aging</span></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 6 : Cautionary example (AI hallucination)
+       ============================================================ -->
+  <section class="slide example" id="s6">
+    <div class="slide-inner wide">
+      <div class="eyebrow">A cautionary example</div>
+      <h2>Polished, convincing, and wrong</h2>
+      <p class="lead">An AI tool generated this graphical abstract of a new paper. It looked authoritative, but the numbers were wrong.</p>
+      <div class="ex-row">
+        <div class="ex-figure">
+          <span class="flag">AI-generated &middot; results incorrect</span>
+          <img src="assets/visual_summary_paper.png" alt="AI-generated graphical summary with incorrect results">
+        </div>
+        <div class="lessons">
+          <div class="lesson l1">
+            <p><b>Hallucinations look real.</b> The summary assigned values to the wrong groups and invented key results, yet looked polished enough to accept and share. As models improve, these errors get harder to spot.</p>
+          </div>
+          <div class="lesson l2">
+            <p><b>Wrong model for the task.</b> Image generators optimize for visual appeal, not quantitative fidelity. Use a language model to build code-based visuals (e.g. HTML) from the real numbers, trading polish for accuracy.</p>
+          </div>
+          <div class="lesson l3">
+            <p><b>AI literacy in research.</b> One interface hides many different models. Know which fits which task, where it fails, and treat every output as a draft to verify against the source.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 7 : Ways to use the agent (CLI vs App)
+       ============================================================ -->
+  <section class="slide concept" id="s7">
+    <div class="slide-inner mid">
+      <div class="eyebrow">Using AI agents</div>
+      <h2>Two ways to run the same agent</h2>
+      <p class="lead">Same model, same tools. What changes is the surface you work in: a terminal or a desktop app. Pick the one that fits how you work.</p>
+      <div class="compare">
+        <div class="card">
+          <span class="tag">Terminal</span>
+          <div class="hrow">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M6.5 9.5l3.2 2.6-3.2 2.6"/><path d="M12.8 14.7h4.7"/></svg>
+            <h3>Codex CLI</h3>
+          </div>
+          <ul>
+            <li>Lives in your terminal, right inside the repo</li>
+            <li>Scriptable and composable with your shell and tools</li>
+            <li>Runs anywhere your code does: laptop, SSH, server, VM</li>
+            <li>Fast and keyboard-driven, ideal for automation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">Desktop app</span>
+          <div class="hrow">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M2.5 8.6h19"/><circle cx="5.7" cy="6.5" r="0.7" fill="currentColor" stroke="none"/><circle cx="7.9" cy="6.5" r="0.7" fill="currentColor" stroke="none"/></svg>
+            <h3>Codex App</h3>
+          </div>
+          <ul>
+            <li>Point-and-click, no terminal required</li>
+            <li>Visual diffs and step-by-step review of every change</li>
+            <li>Lower barrier to entry, easy to start and supervise</li>
+            <li>Delegate tasks and watch them run in a clean UI</li>
+          </ul>
+        </div>
+      </div>
+      <div class="takeaway"><b>Same agent underneath.</b> Your skills, config, and file access travel with you across both.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 8 : Plan mode
+       ============================================================ -->
+  <section class="slide plan" id="s8">
+    <div class="slide-inner wide">
+      <div class="eyebrow">Plan mode</div>
+      <h2>Plan first, then execute</h2>
+      <p class="lead">For big or ambiguous tasks, ask the agent to plan before it acts. It explores read-only, proposes a step-by-step plan, and only changes files once you approve.</p>
+      <div class="plan-row">
+        <div class="plan-left">
+          <div class="prompt">
+            <div class="who">You</div>
+            <p>Help me organize this messy dataset. Dozens of spreadsheets are scattered across different folders, file names are not standardized, some sheets duplicate columns, and a few use different units. I want one clean, documented table.</p>
+          </div>
+          <div class="when">
+            <div class="wh">Reach for plan mode when</div>
+            <ul>
+              <li>the task spans many files or steps</li>
+              <li>the requirements are fuzzy</li>
+              <li>mistakes would be costly</li>
+            </ul>
+          </div>
+        </div>
+        <div class="plan-card">
+          <div class="phead">
+            <span class="ptag">Proposed plan</span>
+            <span class="phint">read-only until you approve</span>
+          </div>
+          <div class="steps">
+            <div class="step"><span class="n">1</span><span class="t"><b>Inventory</b> every spreadsheet across the folders: path, sheet, size, modified date.</span></div>
+            <div class="step"><span class="n">2</span><span class="t"><b>Profile</b> headers and sample rows; flag duplicate columns, mixed units, and encodings.</span></div>
+            <div class="step"><span class="n">3</span><span class="t"><b>Propose a schema</b>: one canonical column set with clear types and units.</span></div>
+            <div class="step"><span class="n">4</span><span class="t"><b>Normalize</b> each sheet to the schema; standardize units, parse dates, drop duplicates.</span></div>
+            <div class="step"><span class="n">5</span><span class="t"><b>Merge and validate</b>: combine into one table; reconcile row counts against the sources.</span></div>
+            <div class="step"><span class="n">6</span><span class="t"><b>Deliver</b> a clean table, a data dictionary, and a short README of decisions.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="takeaway"><b>Nothing changes until you approve.</b> Edit or reorder any step, then the agent executes it.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 9 : Skills + frontend_prototype demo
+       ============================================================ -->
+  <section class="slide skills" id="s9">
+    <div class="slide-inner wide">
+      <div class="eyebrow">Customizing the agent</div>
+      <h2>Skills: teach the agent your way</h2>
+      <p class="lead">A <b>skill</b> is a small markdown file that tells the agent how to do a specific task, with reusable instructions and helper scripts. You can even ask the agent to <b>write the skill itself</b>.</p>
+      <div class="skill-row">
+        <div class="anatomy">
+          <div class="it"><span class="k">Name + when</span><span class="v">a description that tells the agent <b>when</b> to reach for it</span></div>
+          <div class="it"><span class="k">Instructions</span><span class="v">plain-English markdown: conventions, structure, do's and don'ts</span></div>
+          <div class="it"><span class="k">Scripts</span><span class="v">optional helper code the agent can run on its own</span></div>
+          <div class="it"><span class="k">Portable</span><span class="v">lives in your repo, version-controlled, shareable with the team</span></div>
+        </div>
+        <div class="code-wrap">
+<pre class="codeblock"><span class="cm">---</span>
+<span class="kw">name</span>: frontend_prototype
+<span class="kw">description</span>: <span class="str">Polished single-file HTML
+  in a clinical-blue editorial design system.</span>
+<span class="cm">---</span>
+
+<span class="hd">## Design tokens</span>
+<span class="kw">--slate</span>: <span class="str">#052049</span>;   <span class="cm">/* navy text */</span>
+<span class="kw">--clay</span>:  <span class="str">#1C75BC</span>;   <span class="cm">/* clinical blue */</span>
+
+<span class="hd">## Slides / Decks</span>
+Full-screen scroll-snap, one idea per slide,
+arrow-key navigation, fixed counter.</pre>
+          <div class="code-cap">skills/frontend_prototype/SKILL.md</div>
+        </div>
+      </div>
+      <div class="recursion">
+        <svg class="rec-loop" viewBox="0 0 900 130" role="img" aria-label="Recursive loop: ask the agent, it writes a skill, the skill powers the agent">
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#71808F"/></marker>
+            <marker id="ahc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1C75BC"/></marker>
+          </defs>
+          <path d="M765 64 C 765 18, 135 18, 135 66" fill="none" stroke="#1C75BC" stroke-width="1.7" stroke-dasharray="5 5" marker-end="url(#ahc)"/>
+          <text x="450" y="16" fill="#1C75BC" font-size="12" letter-spacing="3" text-anchor="middle">RECURSIVE</text>
+          <line x1="256" y1="89" x2="328" y2="89" stroke="#71808F" stroke-width="1.5" marker-end="url(#ah)"/>
+          <line x1="571" y1="89" x2="643" y2="89" stroke="#71808F" stroke-width="1.5" marker-end="url(#ah)"/>
+          <g>
+            <rect x="20" y="64" width="230" height="50" rx="11" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+            <text x="135" y="89" fill="#052049" font-size="14" text-anchor="middle" dominant-baseline="middle">Ask the agent</text>
+          </g>
+          <g>
+            <rect x="335" y="64" width="230" height="50" rx="11" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+            <text x="450" y="89" fill="#052049" font-size="14" text-anchor="middle" dominant-baseline="middle">It writes a skill</text>
+          </g>
+          <g>
+            <rect x="650" y="64" width="230" height="50" rx="11" fill="#ffffff" stroke="#1C75BC" stroke-width="1.7"/>
+            <text x="765" y="89" fill="#052049" font-size="14" text-anchor="middle" dominant-baseline="middle">Skill powers the agent</text>
+          </g>
+        </svg>
+        <p class="rec-cap"><b>The agent can write the very skill that powers it.</b> <span class="kbd">frontend_prototype</span> was generated this way, and now it builds every slide you're seeing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 10 : From prompt to harness engineering
+       ============================================================ -->
+  <section class="slide harness" id="s10">
+    <div class="slide-inner wide">
+      <div class="eyebrow">Engineering the agent</div>
+      <h2>From prompt to harness engineering</h2>
+      <p class="lead"><b>Prompt engineering</b> is about the words you send. <b>Harness engineering</b> is about the system around the model: the tools it can call, the loop it runs, and the services it can reach.</p>
+      <div class="harness-grid">
+        <div class="hc">
+          <span class="hc-tag">Tool definition</span>
+          <h3>Give it actions</h3>
+          <p class="hc-desc">Three parts: the function, the schema the model sees, and a prompt telling it when to call.</p>
+          <div class="hc-visual">
+<pre class="codeblock"><span class="cm"># 1. the function (your code)</span>
+<span class="kw">def</span> search_patients(query):
+    <span class="kw">return</span> db.search(query)
+
+<span class="cm"># 2. declared to the model</span>
+{<span class="kw">"name"</span>: <span class="str">"search_patients"</span>,
+ <span class="kw">"description"</span>: <span class="str">"find patients"</span>,
+ <span class="kw">"parameters"</span>: {<span class="kw">"query"</span>: <span class="str">"str"</span>}}
+
+<span class="cm"># 3. tell the model to use it</span>
+system: <span class="str">"Call search_patients
+to look up patient records."</span></pre>
+          </div>
+        </div>
+        <div class="hc">
+          <span class="hc-tag">Agentic loop</span>
+          <h3>Let it iterate</h3>
+          <p class="hc-desc">The model plans, calls a tool, reads the result, and repeats until the goal is met.</p>
+          <div class="hc-visual">
+            <div class="loopmini">
+              <span class="ls">Plan</span>
+              <span class="lr">&darr;</span>
+              <span class="ls">Call a tool</span>
+              <span class="lr">&darr;</span>
+              <span class="ls">Observe the result</span>
+              <span class="lr rep">&#8635; repeat until done</span>
+            </div>
+          </div>
+        </div>
+        <div class="hc">
+          <span class="hc-tag">MCP servers</span>
+          <h3>Connect the world</h3>
+          <p class="hc-desc">A standard way to plug in outside tools and data, so the agent reaches beyond the chat.</p>
+          <div class="hc-visual">
+            <div class="chips">
+              <span class="pchip">Files</span>
+              <span class="pchip">Database</span>
+              <span class="pchip">Web</span>
+              <span class="pchip">GitHub</span>
+              <span class="pchip">Calendar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="takeaway"><b>The model is the engine; the harness makes it drive.</b> Today's gains come from better tools, loops, and connectors, not just better prompts.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 11 : MCP servers = connectors / plugins
+       ============================================================ -->
+  <section class="slide mcp" id="s11">
+    <div class="slide-inner wide">
+      <div class="eyebrow">MCP servers</div>
+      <h2>Really just connectors and plugins</h2>
+      <p class="lead">MCP (Model Context Protocol) is an open standard for connecting an agent to outside tools and data. Each server is really a <b>connector</b>, or <b>plugin</b>: add one, and the agent gains a new capability, like apps for a phone or extensions for a browser.</p>
+      <svg class="mcp-hub" viewBox="0 0 920 330" role="img" aria-label="An agent in the center connected to file system, databases, web search, GitHub, calendar and email, and literature">
+        <g stroke="#1C75BC" stroke-width="1.5" stroke-dasharray="5 5">
+          <line x1="460" y1="165" x2="760" y2="165"/>
+          <line x1="460" y1="165" x2="610" y2="61"/>
+          <line x1="460" y1="165" x2="310" y2="61"/>
+          <line x1="460" y1="165" x2="160" y2="165"/>
+          <line x1="460" y1="165" x2="310" y2="269"/>
+          <line x1="460" y1="165" x2="610" y2="269"/>
+        </g>
+        <g>
+          <rect x="682" y="144" width="156" height="42" rx="10" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+          <text x="760" y="165" fill="#052049" font-size="12.5" text-anchor="middle" dominant-baseline="middle">Web search</text>
+        </g>
+        <g>
+          <rect x="532" y="40" width="156" height="42" rx="10" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+          <text x="610" y="61" fill="#052049" font-size="12.5" text-anchor="middle" dominant-baseline="middle">GitHub</text>
+        </g>
+        <g>
+          <rect x="232" y="40" width="156" height="42" rx="10" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+          <text x="310" y="61" fill="#052049" font-size="12.5" text-anchor="middle" dominant-baseline="middle">Databases</text>
+        </g>
+        <g>
+          <rect x="82" y="144" width="156" height="42" rx="10" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+          <text x="160" y="165" fill="#052049" font-size="12.5" text-anchor="middle" dominant-baseline="middle">File system</text>
+        </g>
+        <g>
+          <rect x="232" y="248" width="156" height="42" rx="10" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+          <text x="310" y="269" fill="#052049" font-size="12.5" text-anchor="middle" dominant-baseline="middle">Calendar &amp; email</text>
+        </g>
+        <g>
+          <rect x="532" y="248" width="156" height="42" rx="10" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+          <text x="610" y="269" fill="#052049" font-size="12.5" text-anchor="middle" dominant-baseline="middle">Literature</text>
+        </g>
+        <rect x="380" y="135" width="160" height="60" rx="14" fill="#052049"/>
+        <text x="460" y="165" fill="#F4F7FB" font-size="14" text-anchor="middle" dominant-baseline="middle">Your agent</text>
+      </svg>
+      <p class="mcp-cap"><b>Add a server, gain a capability.</b> You have already used one: the Outlook <span class="kbd">connector</span> in ChatGPT Enterprise.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 12 : Worked example (candidate screening)
+       ============================================================ -->
+  <section class="slide worked" id="s12">
+    <div class="slide-inner wide">
+      <div class="eyebrow">Worked example</div>
+      <h2>Screening research candidates</h2>
+      <p class="lead">A real NeuroAI Lab tool: read every applicant CV, score it against our hiring criteria, and justify each decision, then post the ranked results back to our UCSF GitHub.</p>
+      <div class="flow">
+        <div class="fstep"><span class="l">Read CVs</span><span class="s">PDF to text</span></div>
+        <span class="farrow">&rarr;</span>
+        <div class="fstep"><span class="l">Score vs criteria</span><span class="s">LLM on UCSF Versa</span></div>
+        <span class="farrow">&rarr;</span>
+        <div class="fstep"><span class="l">Structured result</span><span class="s">met &middot; confidence &middot; evidence</span></div>
+        <span class="farrow">&rarr;</span>
+        <div class="fstep"><span class="l">Share results</span><span class="s">ranked CSV + GitHub</span></div>
+      </div>
+      <table class="restable">
+        <thead>
+          <tr>
+            <th>Candidate</th>
+            <th class="cent">Academic</th>
+            <th class="cent">Clinical</th>
+            <th class="cent">Modality</th>
+            <th class="cent">Technical</th>
+            <th class="cent">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cand">Candidate A</td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">high</span></td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">med</span></td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">high</span></td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">high</span></td>
+            <td class="cent"><span class="sc full">4/4</span></td>
+          </tr>
+          <tr>
+            <td class="cand">Candidate B</td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">high</span></td>
+            <td class="cent"><span class="mk no2">&#10007;</span> <span class="cf">low</span></td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">med</span></td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">high</span></td>
+            <td class="cent"><span class="sc">3/4</span></td>
+          </tr>
+          <tr>
+            <td class="cand">Candidate C</td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">med</span></td>
+            <td class="cent"><span class="mk no2">&#10007;</span> <span class="cf">low</span></td>
+            <td class="cent"><span class="mk ok2">&#10003;</span> <span class="cf">med</span></td>
+            <td class="cent"><span class="mk no2">&#10007;</span> <span class="cf">low</span></td>
+            <td class="cent"><span class="sc">2/4</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tcap">
+        <span class="ev"><b>Evidence (Academic, Candidate A):</b> &ldquo;PhD in Neuroscience; 14 peer-reviewed publications, several in high-impact journals.&rdquo;</span>
+        <span class="vbadge">UCSF Versa &middot; PHI-safe</span>
+      </div>
+      <div class="takeaway"><b>The same building blocks.</b> Criteria are the spec, the system prompt sets the rubric, a typed schema makes every result structured and explainable, and a loop scales it to every applicant.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 13 : reviewer_response skill in action
+       ============================================================ -->
+  <section class="slide reviewer" id="s13">
+    <div class="slide-inner wide">
+      <div class="eyebrow">A skill in action</div>
+      <h2>Responding to reviewers</h2>
+      <p class="lead">A skill for the work researchers dread: point-by-point reviewer and grant responses. It drafts one comment at a time, grounds every reply in the manuscript's tracked changes, and verifies each citation before using it.</p>
+      <div class="rev-grid">
+        <div class="when">
+          <div class="wh">What the skill enforces</div>
+          <ul>
+            <li>One comment at a time, wait for approval</li>
+            <li>Quote the real tracked changes, never invent</li>
+            <li>Verify every citation online (APA)</li>
+            <li>Diplomatic tone: concede, then explain</li>
+            <li>No em dashes, no AI-tells</li>
+            <li>Notes to co-authors for open items</li>
+          </ul>
+        </div>
+        <div class="rev-card">
+          <div class="rtag">Reviewer 2 &middot; Comment 2</div>
+          <p class="cmt">&ldquo;The subgroup analyses seem underpowered. Please justify the sample sizes.&rdquo;</p>
+          <p class="resp">We thank the reviewer for this helpful point. We agree these analyses are exploratory, now say so explicitly, and report 95% confidence intervals throughout. We added the following to the Methods:</p>
+          <div class="msq">&ldquo;Subgroup analyses were prespecified but exploratory; given the limited subgroup sizes, estimates are reported with 95% confidence intervals and interpreted with caution.&rdquo;</div>
+          <div class="pause"><svg width="12" height="12" viewBox="0 0 12 12"><rect x="2" y="1.5" width="3" height="9" rx="1" fill="#1C75BC"/><rect x="7" y="1.5" width="3" height="9" rx="1" fill="#1C75BC"/></svg> Stops here. Waits for your approval before Comment 3.</div>
+        </div>
+      </div>
+      <div class="takeaway"><b>A skill captures how you work.</b> Your format, your voice, and your integrity rules, applied the same way every time.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 14 : Paperclip via Codex
+       ============================================================ -->
+  <section class="slide paperclip" id="s14">
+    <div class="slide-inner wide">
+      <div class="eyebrow">Paperclip + Codex</div>
+      <h2>Search papers from inside the agent</h2>
+      <p class="lead">Paperclip is a biomedical literature connector and CLI. Once installed, Codex can search papers, regulatory documents, and clinical trials, read the source text, and bring back citations instead of relying on memory.</p>
+      <div class="pc-grid">
+        <div class="pc-card">
+          <span class="pc-tag">1 · Install once</span>
+          <h3>Local CLI + Codex skill</h3>
+          <p>Run the Paperclip installer, sign in, then install the project skill and select <b>Codex</b>.</p>
+<pre class="pc-code"><span class="kw">curl</span> -fsSL https://paperclip.gxl.ai/install.sh | bash
+<span class="kw">paperclip</span> install  <span class="cm"># select Codex</span></pre>
+          <div class="pc-path">.agents/skills/paperclip/SKILL.md</div>
+        </div>
+        <div class="pc-card primary">
+          <span class="pc-tag">2 · Ask naturally</span>
+          <h3>Use <span style="font-family:var(--mono); color:var(--rust); font-size:.72em;">/paperclip</span> in Codex</h3>
+          <p>Start a fresh Codex session in the project, then mention the skill in the prompt. The agent loads the Paperclip docs and chooses the right commands.</p>
+          <div class="pc-prompt">
+            <span class="who">You</span>
+            <p>using /paperclip, find papers about Alzheimer's and pTau217 in Black populations</p>
+          </div>
+          <div class="pc-mini">
+            <span>search</span><span>read full text</span><span>extract lines</span><span>cite</span>
+          </div>
+        </div>
+        <div class="pc-card">
+          <span class="pc-tag">3 · Agent loop</span>
+          <h3>From query to evidence</h3>
+          <p>Codex can iterate over the corpus, inspect the papers it finds, and summarize only what is supported by sources.</p>
+          <div class="pc-flow">
+            <div class="pc-step"><span class="n">1</span><span class="t"><b>Search</b> PMC, preprints, FDA, or trials.</span></div>
+            <div class="pc-step"><span class="n">2</span><span class="t"><b>Read</b> abstracts, methods, results, and figures.</span></div>
+            <div class="pc-step"><span class="n">3</span><span class="t"><b>Return</b> a concise answer with line-level citations.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="takeaway"><b>Same Codex workflow, larger library.</b> Paperclip turns biomedical literature into a tool the agent can call, inspect, and cite.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 15 : Jira via the Atlassian MCP server on Codex
+       ============================================================ -->
+  <section class="slide jira" id="s15">
+    <div class="slide-inner wide">
+      <div class="eyebrow">MCP in practice</div>
+      <h2>Your Jira, straight from Codex</h2>
+      <p class="lead">Remember MCP servers, the connectors from earlier? Here is one, live. Point Codex at <b>Atlassian Jira</b> and it can read your board: ask for your open tickets in plain English and get them back with working links.</p>
+      <div class="jira-grid">
+        <div class="jira-col">
+          <div class="step-label"><span class="num">1</span> Add the connector</div>
+<pre class="codeblock"><span class="cm"># ~/.codex/config.toml</span>
+<span class="hd">[mcp_servers.atlassian]</span>
+<span class="kw">command</span> = <span class="str">"npx"</span>
+<span class="kw">args</span> = [<span class="str">"-y"</span>, <span class="str">"@aashari/mcp-server-atlassian-jira"</span>]
+
+<span class="hd">[mcp_servers.atlassian.env]</span>
+<span class="kw">ATLASSIAN_SITE_NAME</span>  = <span class="str">"your-site"</span>
+<span class="kw">ATLASSIAN_USER_EMAIL</span> = <span class="str">"you@ucsf.edu"</span>
+<span class="kw">ATLASSIAN_API_TOKEN</span>  = <span class="str">"ATATT3x&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"</span>  <span class="cm"># from id.atlassian.com</span></pre>
+          <div class="code-cap">Drop the block in, then restart Codex.</div>
+          <div class="step-label more"><span class="num">2</span> Add a skill for consistency</div>
+<pre class="codeblock"><span class="cm">---</span>
+<span class="kw">name</span>: jira
+<span class="kw">description</span>: <span class="str">Always link every ticket,
+  show its status, confirm before writes.</span>
+<span class="cm">---</span>
+One format, every time:
+[KEY](&hellip;/browse/KEY) &middot; summary &middot; <span class="hd">status</span></pre>
+          <div class="code-cap">skills/jira/SKILL.md</div>
+        </div>
+        <div class="jira-col">
+          <div class="step-label"><span class="num">3</span> Just ask, in plain English</div>
+          <div class="jira-shot"><img src="assets/jira_mcp_demo.png" alt="Codex querying Jira through the Atlassian MCP server: one prompt returns 12 open tickets, each with a link"></div>
+          <div class="code-cap">One prompt &rarr; 12 open tickets, each linking straight to Jira.</div>
+        </div>
+      </div>
+      <div class="takeaway"><b>This is an MCP connector at work.</b> No exports and no custom API code. The same pattern from earlier, now pointed at Jira. Swap in GitHub, Confluence, or a database the same way.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Slide 16 : Closing - takeaways + how to start
+       ============================================================ -->
+  <section class="slide invert close" id="s16">
+    <div class="slide-inner wide">
+      <div class="eyebrow">Wrapping up</div>
+      <h2>Pick one task. Start this week.</h2>
+      <p class="lead">The tools are already here and they are PHI-safe. The fastest way to learn is to point one at a piece of real work and watch what it does.</p>
+      <div class="close-grid">
+        <div class="close-col remember">
+          <div class="ch">What to remember</div>
+          <ul>
+            <li><b>Agentic AI works with you.</b> It plans, acts, checks, and repeats, instead of just answering.</li>
+            <li><b>Use UCSF's PHI-safe tools.</b> ChatGPT Enterprise and the Versa API keep data protected and out of training.</li>
+            <li><b>Treat every output as a draft.</b> Polished does not mean correct. Verify against the source.</li>
+            <li><b>The harness beats the prompt.</b> Tools, loops, and connectors are where the real gains come from.</li>
+            <li><b>Skills capture how you work.</b> Encode your process once, reuse it the same way every time.</li>
+          </ul>
+        </div>
+        <div class="close-col steps">
+          <div class="ch">Start this week</div>
+          <ol>
+            <li>Request access to ChatGPT Enterprise and UCSF Versa.</li>
+            <li>Pick one repetitive task you already do often.</li>
+            <li>Ask the agent to plan first, then approve before it runs.</li>
+            <li>Keep PHI on Enterprise or Versa only, never consumer ChatGPT.</li>
+            <li>Check the result against the original data before you trust it.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="close-foot">
+        <span class="ty">Thank you.</span>
+        <span class="sig"><b>Pedro Pinheiro-Chagas, PhD</b><br>UCSF NeuroAI Lab &middot; Weill Institute for Neurosciences</span>
+      </div>
+    </div>
+  </section>
+
+  <div id="counter">1 / 1</div>
+
+<script>
+(function () {
+  const slides = [...document.querySelectorAll('.slide')];
+  const counter = document.getElementById('counter');
+  let current = 0;
+  const go = i => {
+    current = Math.max(0, Math.min(slides.length - 1, i));
+    slides[current].scrollIntoView({ behavior: 'smooth' });
+  };
+  addEventListener('keydown', e => {
+    if (['ArrowRight', 'ArrowDown', ' '].includes(e.key)) { e.preventDefault(); go(current + 1); }
+    if (['ArrowLeft', 'ArrowUp'].includes(e.key))         { e.preventDefault(); go(current - 1); }
+  });
+  const obs = new IntersectionObserver(es => es.forEach(en => {
+    if (en.isIntersecting) {
+      current = slides.indexOf(en.target);
+      counter.textContent = `${current + 1} / ${slides.length}`;
+    }
+  }), { threshold: 0.6 });
+  slides.forEach(s => obs.observe(s));
+})();
+</script>
+</body>
+</html>
