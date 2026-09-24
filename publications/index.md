@@ -9,6 +9,16 @@ layout: default
 
 ## Selected Publications
 
+[2026] Pinheiro-Chagas, P., Kersey, M., Bahar, N., Inkelis, S., Mauer, E., Siebert, J., Vonk, J. M. J., Bogley, R., Carpenter, E., Martin-Moreno, D. V., De Leon, J., Tee, B. L., Mandelli, M. L., Pereira, C., Miller, Z. A., & Gorno-Tempini, M. L. **[Data-driven cognitive clusters in persistent developmental dyslexia](https://doi.org/10.1016/j.cortex.2026.08.006)**. *Cortex*, *204*, 216-228. https://doi.org/10.1016/j.cortex.2026.08.006
+
+[2026] Breithaupt, A. G., Weiner, M., Tang, A., Possin, K. L., Sirota, M., Lah, J., Levey, A. I., Van Hentenryck, P., Zandehshahvar, R., Gorno-Tempini, M. L., Giorgio, J., Wang, J., Rauschecker, A. M., Rosen, H. J., Nosheny, R. L., Miller, B. L., & Pinheiro-Chagas, P. **[Agentic AI for scaling diagnosis and care in neurodegenerative disease](https://doi.org/10.1038/s43587-026-01186-z)**. *Nature Aging*, *6*(8), 1565-1579. https://doi.org/10.1038/s43587-026-01186-z
+
+[2026] Palser, E. R., Bahar, N., Carpenter, E., Bardorf, M., Kersey, M., Bogley, R., Inkelis, S., Pinheiro-Chagas, P., Tee, B. L., DeLeon, J., Sturm, V. E., Miller, Z. A., Mandelli, M. L., Gorno-Tempini, M. L., & Pereira, C. **[Spoken language delay in toddlerhood predicts late childhood language outcomes in dyslexia: evidence from retrospective parent-report](https://doi.org/10.1007/s11881-026-00387-w)**. *Annals of Dyslexia*, *76*(2), 329-347. https://doi.org/10.1007/s11881-026-00387-w
+
+[2026] Romano, M. F., Nedelec, P., Mandelli, M. L., Yeatman, J. D., Bonham, L. W., Pinheiro-Chagas, P., Sugrue, L. P., Gorno-Tempini, M. L., & Rauschecker, A. M. **[A neuroanatomical basis for co-occurring low attention and low reading ability](https://doi.org/10.1093/cercor/bhag100)**. *Cerebral Cortex*, *36*(7), bhag100. https://doi.org/10.1093/cercor/bhag100
+
+[2026] Cadwallader, C. J., Pinheiro-Chagas, P., Saloner, R., Fenton, L., VandeBunte, A. M., Lin, M., Pham, A., Chen, C., Diaz, V. E., Olzinski, M., Licata, S., Callies, L., Lo, C., Buxton, J., Cobigo, Y., Rabinovici, G. D., Kramer, J. H., Casaletto, K. B., & Paolillo, E. W. **[The active ingredients: physical activity features linked to healthy brain aging](https://doi.org/10.1186/s13195-026-01998-6)**. *Alzheimer's Research & Therapy*, *18*(1), 88. https://doi.org/10.1186/s13195-026-01998-6
+
 [2025] Breithaupt, A. G., Tang, A., Paolillo, E. W., Bibars, M., Johnson, E. C. B., Saloner, R., Possin, K. L., Windon, C. C., Hill-Jarrett, T. G., Giorgio, J., Rauschecker, A. M., Kwon, H., Vonk, J. M. J., & Pinheiro-Chagas, P. **[Review of artificial intelligence for clinical use in Alzheimer's disease and related dementias](/publications/breithaupt_2025_ai_review_alzheimers_seminars_neurology.pdf)**. *Seminars in Neurology*. https://doi.org/10.1055/a-2744-9871
 
 [2025] Gallingani, C., Miller, Z. A., Mandelli, M. L., Rosen, H. J., Ezzes, Z., Lin, M., Rodriguez, D., Grinberg, L. T., Spina, S., Seeley, W. W., Miller, B., Gorno-Tempini, M. L.\*, & Pinheiro-Chagas, P.\* **[Agentic Generative Artificial Intelligence System for Classification of Pathology-Confirmed Primary Progressive Aphasia Variants](https://doi.org/10.1101/2025.10.28.25338977)**. *medRxiv*. https://doi.org/10.1101/2025.10.28.25338977
@@ -16,8 +26,6 @@ layout: default
 [2025] Tang, A. S., Zeng, B. Z. D., Rankin, K. P., Gorno-Tempini, M. L., Seeley, W. W., Rosen, H. J., Rabinovici, G. D., Oskotsky, T. T., Sirota, M., & Pinheiro-Chagas, P. **[Characterizing Dementia Phenotypes from Unstructured EHR Notes with Generative AI and Interpretable Machine Learning](https://doi.org/10.1101/2025.10.01.25336815)**. *medRxiv*. https://doi.org/10.1101/2025.10.01.25336815
 
 [2025] Cheng, Y. W., Pinheiro-Chagas, P., Gorno-Tempini, M. L., & Tee, B. L. **[Redefining Language and Neurodegeneration Through PPA: Clinical Phenotypes, Network Vulnerability, and Global Research Directions](https://doi.org/10.2496/hbfr.45.159)**. *Higher Brain Function Research*, *45*(3), 159-175. https://doi.org/10.2496/hbfr.45.159
-
-[2025] Breithaupt, A. G., Weiner, M., Tang, A., Possin, K. L., Sirota, M., Lah, J., Levey, A. I., Van Hentenryck, P., Zandehshahvar, R., Gorno-Tempini, M. L., Giorgio, J., Wang, J., Rauschecker, A. M., Rosen, H. J., Nosheny, R. L., Miller, B. L., & Pinheiro-Chagas, P. **[Integrating Generative Artificial Intelligence in ADRD: A Roadmap for Streamlining Diagnosis and Care in Neurodegenerative Diseases](https://doi.org/10.48550/arXiv.2502.06842)**. *arXiv*. https://doi.org/10.48550/arXiv.2502.06842
 
 [2024] Stieger, J. R., Pinheiro-Chagas, P., Fang, Y., Li, J., Lusk, Z., Perry, C. M., Girn, M., Contreras, D., Chen, Q., Huguenard, J. R., Spreng, R. N., Edlow, B. L., Wagner, A. D., Buch, V., & Parvizi, J. **[Cross-regional coordination of activity in the human brain during autobiographical self-referential processing](https://doi.org/10.1073/pnas.2316021121)**. *Proceedings of the National Academy of Sciences*, *121*(32), e2316021121. https://doi.org/10.1073/pnas.2316021121
 
